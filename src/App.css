@@ -10,6 +10,11 @@
 
   justify-content: center;
   text-align: center;
-
-
 } 
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  max-width: 75vw;
+}
