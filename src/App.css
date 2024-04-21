@@ -13,8 +13,12 @@
 } 
 
 .contentContainer {
+  text-align: left;
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 60vh;
   max-width: 75vw;
+  
 }
