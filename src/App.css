@@ -1,6 +1,19 @@
+
+a :hover{
+  opacity: 90%;
+}
+
+/*site wide color constants*/
+:root {
+  --primary-gradient-color: #282c34;
+  --secondary-gradient-color: #45494E ;
+  --primary-text-color: antiquewhite;
+  --background-color: #45494E;
+}
+ 
  .App {
-  background-color: rgba(24, 29, 37, 0.8);
-  color: antiquewhite;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
   display: flex;
 
   font-family: 'Marcellus SC', Arial, Helvetica, sans-serif;

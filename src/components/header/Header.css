@@ -11,8 +11,7 @@ h1 {
 
 .headerMain {
   align-items: center;
-  background-color: #282c34;
-  background-image: linear-gradient(to bottom, #282c34, #464a50);
+  background-image: linear-gradient(to bottom, var(--primary-gradient-color), var(--secondary-gradient-color));
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;

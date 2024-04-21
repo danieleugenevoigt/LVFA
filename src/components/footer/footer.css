@@ -11,7 +11,7 @@
 
   .footer {
     align-items: center;
-    background-image: linear-gradient(to top, #282c34, #464a50);
+    background-image: linear-gradient(to top, var(--primary-gradient-color), var(--secondary-gradient-color));
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
