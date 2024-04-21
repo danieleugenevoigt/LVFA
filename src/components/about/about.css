@@ -5,12 +5,15 @@
   }
 
   h2 {
-    font-size: 1.5rem;
-    margin: 0 0 2rem 1rem;
+    font-size: 1.25rem;
+    
   }
 
   p {
     font-size: 1rem;
+    line-height: 150%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 
   /* .about {
