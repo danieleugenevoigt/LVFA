@@ -3,7 +3,9 @@ import './artworkViewer.css';
 
 function ArtworkViewer() {
   return (
-    <div className="artworkViewerContainer" />
+    <div className="artworkViewerContainer">
+      <p>Image goes here</p>
+    </div>
   );
 }
 
