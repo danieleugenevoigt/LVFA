@@ -14,7 +14,7 @@ function About() {
       <p />
       <p>
         Employing the precision of CNC laser cutting, I translate the digital canvas into tangible layers of paper, each piece a fragment waiting to be assembled.
-        Hand-assembling each layer, I imbue the work with a personal touch, occasionally adding or subtracting details to enhance the piece&aposs coherence. This process of deconstruction and reconstruction allows for a deeper engagement with the work, fostering a tangible connection between creator and creation.
+        Hand-assembling each layer, I imbue the work with a personal touch, occasionally adding or subtracting details to enhance the piece&apos;s coherence. This process of deconstruction and reconstruction allows for a deeper engagement with the work, fostering a tangible connection between creator and creation.
         In this synthesis of modern technology and traditional craftsmanship, I find fulfillment in the act of creation. It is a process that honors both the innovation of digital tools and the timeless beauty of paper as a medium of expression. Through this journey, I discover not only the essence of my art but also a deeper understanding of myself as an artist.
       </p>
     </div>
