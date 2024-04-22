@@ -1,5 +1,6 @@
 import React from 'react';
 import './home.css';
+import ArtworkViewer from '../artwork-Viewer/ArtworkViewer';
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
         news, and events.
         {' '}
       </p>
+      <ArtworkViewer />
     </div>
   );
 }

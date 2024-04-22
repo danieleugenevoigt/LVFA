@@ -10,7 +10,11 @@ import './App.css';
 import Home from './components/home/Home';
 import Header from './components/header/ Header';
 import Footer from './components/footer/Footer';
+import Gallery from './components/gallery/Gallery';
 import About from './components/about/About';
+import News from './components/news/News';
+import Events from './components/events/Events';
+import Contact from './components/contact/Contact';
 
 function App() {
   return (
@@ -19,7 +23,11 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>
