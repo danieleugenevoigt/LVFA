@@ -15,6 +15,7 @@ import About from './components/about/About';
 import News from './components/news/News';
 import Events from './components/events/Events';
 import Contact from './components/contact/Contact';
+import PageNotFound from './components/page-not-found/PageNotFound';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
       </Router>
