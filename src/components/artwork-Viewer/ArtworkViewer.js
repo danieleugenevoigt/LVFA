@@ -4,7 +4,12 @@ import './artworkViewer.css';
 function ArtworkViewer() {
   return (
     <div className="artworkViewerContainer">
-      <p>Image goes here</p>
+      <div id="threesixty" />
+      <div className="buttons-wrapper">
+        <button className="button" id="prev" type="button">Prev</button>
+        spin
+        <button className="button" id="next" type="button">Next</button>
+      </div>
     </div>
   );
 }

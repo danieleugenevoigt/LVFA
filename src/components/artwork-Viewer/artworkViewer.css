@@ -10,3 +10,68 @@
     width: 60vw;
     text-align: left;
   }
+
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.wrapper {
+	font-family: 'Open Sans', sans;
+	text-align: center;
+  color: #444;
+}
+
+#threesixty {
+	margin: 0 auto;
+  user-select: none;
+}
+
+.g-hub {
+  color: #444;
+  font-size: 0.9em;
+}
+
+.buttons-wrapper {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  position: relative;
+  appearance: none;
+  border: none;
+  padding: 40px 7px 5px;
+  cursor: pointer;
+  background: #fff;
+  font-size: 0;
+  
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000;
+    width: 15px;
+    height: 15px;
+    transform: translate(-45%) rotate(-45deg);
+  }
+  
+  &::after {
+    transform: translate(5%) rotate(-45deg);
+  }
+}
+
+#next {
+  
+  &::before {
+    transform: translate(-90%) rotate(135deg);
+  }
+  
+  &::after {
+    transform: translate(-50%) rotate(135deg);
+  }
+}
