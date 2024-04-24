@@ -1,14 +1,16 @@
 import React from 'react';
 import './artworkViewer.css';
+import image1 from '../../images/1.jpg';
+import image2 from '../../images/2.jpg';
+import image3 from '../../images/3.jpg';
 
 function ArtworkViewer() {
   return (
     <div className="artworkViewerContainer">
-      <div id="threesixty" />
-      <div className="buttons-wrapper">
-        <button className="button" id="prev" type="button">Prev</button>
-        spin
-        <button className="button" id="next" type="button">Next</button>
+      <div>
+        <img src={image1} alt="artwork-series-1" />
+        <img src={image2} alt="artwork-series-2" />
+        <img src={image3} alt="artwork-series-3" />
       </div>
     </div>
   );
