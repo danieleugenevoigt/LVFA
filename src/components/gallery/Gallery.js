@@ -1,8 +1,11 @@
 import React from 'react';
+import ArtworkViewer from '../artwork-Viewer/ArtworkViewer';
 
 function Gallery() {
   return (
-    <div />
+    <div>
+      <ArtworkViewer />
+    </div>
   );
 }
 

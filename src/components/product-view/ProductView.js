@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
+import './productView.css';
 
 export default function SimpleSlider() {
   const [value, setValue] = useState(0);
   const [number, setNumber] = useState(1);
-  // const imagePath = '../../images';
-  // {`${imagePath}/car-${number}.png`}
-  // {`${process.env.PUBLIC_URL}/images/car-${number}.png`}
+  const title = 'Sample art title 12" by 12" 2023';
 
   const handleChange = (event) => {
     const newValue = parseInt(event.target.value, 10);
@@ -18,20 +17,20 @@ export default function SimpleSlider() {
   };
 
   return (
-    <div>
-      <h2>360 Image View</h2>
-      <img src={`${process.env.PUBLIC_URL}/images/car-${number}.png`} width="800" height="400" alt={`Car ${number}`} />
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <span>Slide to view different angles:</span>
-        <input
-          type="range"
-          min="0"
-          max="102"
-          value={value}
-          onChange={handleChange}
-          style={{ width: '300px', margin: '0 10px' }}
-        />
-        <span>{value}</span>
+    <div className="container">
+      <img src={`${process.env.PUBLIC_URL}/images/car-${number}.png`} alt={`Car ${number}`} />
+      <div className="imageInfo">
+        <div className="slider">
+          <span>View Angle:</span>
+          <input
+            type="range"
+            min="0"
+            max="102"
+            value={value}
+            onChange={handleChange}
+          />
+        </div>
+        <h2 className="title">{title}</h2>
       </div>
     </div>
   );

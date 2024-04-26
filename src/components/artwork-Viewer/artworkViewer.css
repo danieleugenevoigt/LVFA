@@ -1,6 +1,6 @@
 .artworkViewerContainer{
-    border: 1px solid var(--primary-text-color);
-    border-radius: 5px;
+    /* border: 1px solid var(--primary-text-color);
+    border-radius: 5px; */
     display: flex;
     flex-direction: column;
     margin-left: auto;
