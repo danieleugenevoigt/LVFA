@@ -25,6 +25,7 @@ span {
 }
 
 .slider {
+    height: 2rem;
     width: 300px;
 }
 
@@ -32,8 +33,7 @@ span {
     appearance: none;
     border-radius: 5px;
     width: 100px; 
-    height: 10px; 
-    margin: 1px;
+    height: 8px; 
     outline: none; /* Remove default outline */
   }
 
