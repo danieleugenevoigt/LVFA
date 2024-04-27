@@ -12,8 +12,8 @@ span {
 }
 
 .container img {
-    width: 100%; /* Ensures image fills container width */
-    height: 100%; /* Ensures image fills container height */
+    width: 100%;
+    height: 100%;
     object-fit: contain; /* Scales image to maintain aspect ratio and fit within container */
 }
 
@@ -26,6 +26,38 @@ span {
 
 .slider {
     width: 300px;
+}
+
+.sliderSetup {
+    appearance: none;
+    border-radius: 5px;
+    width: 100px; 
+    height: 10px; 
+    margin: 1px;
+    outline: none; /* Remove default outline */
+  }
+
+  .sliderSetup::-webkit-slider-thumb {
+    appearance: none; /* Override default appearance of the thumb */
+    width: 20px; /* Set width of the thumb */
+    height: 20px; /* Set height of the thumb */
+    background: var(--secondary-gradient-color); /* Custom thumb color */
+    border-radius: 50%; /* Rounded shape for the thumb */
+    border: 1px solid #ccc; /* Border for the thumb */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); /* Shadow effect for the thumb */
+    cursor: pointer; /* Cursor style for interaction */
+   
+}
+
+/* Customize the thumb (slider handle) for Firefox */
+.sliderSetup::-moz-range-thumb {
+    width: 20px; /* Set width of the thumb */
+    height: 20px; /* Set height of the thumb */
+    background: var(--secondary-gradient-color); /* Custom thumb color */
+    border-radius: 50%; /* Rounded shape for the thumb */
+    border: 1px solid #ccc; /* Border for the thumb */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); /* Shadow effect for the thumb */
+    cursor: pointer; /* Cursor style for interaction */
 }
 
 .title {
