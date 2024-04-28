@@ -4,7 +4,7 @@ import ProductView from '../product-view/ProductView';
 
 function ArtworkViewer() {
   return (
-    <div className="artworkViewerContainer">
+    <div>
       <ProductView />
     </div>
   );

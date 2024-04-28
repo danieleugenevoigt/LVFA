@@ -4,11 +4,7 @@ span {
 }
 
 .container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 60vh;
-    width: 60vw;
+height: 80%;
 }
 
 .container img {

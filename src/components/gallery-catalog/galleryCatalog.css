@@ -1,0 +1,23 @@
+
+.galleryContainer {
+    align-content:flex-start;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.thumbnailButton {
+    appearance: none;
+    border: none;
+    height: 6rem;
+    margin-left: 1rem;
+    width: 6rem;
+}
+
+.thumbnailButton img {
+    height: 6rem;
+    margin: 0;
+    width: 6rem;
+}
