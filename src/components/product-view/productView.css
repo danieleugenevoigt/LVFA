@@ -8,9 +8,10 @@ height: 80%;
 }
 
 .container img {
-    width: 100%;
+    border-radius: 1rem;
     height: 100%;
-    object-fit: contain; /* Scales image to maintain aspect ratio and fit within container */
+    object-fit: fill;
+    width: 100%;
 }
 
 .imageInfo {

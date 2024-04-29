@@ -3,22 +3,27 @@
     align-content:flex-start;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     height: 100%;
-    justify-content: center;
-    width: 100%;
+    justify-content: left;
+
+    padding-left: 2rem;
+    width: 40vw;
 }
 
 .thumbnailButton {
     appearance: none;
     border: none;
-    height: 4rem;
-    margin-left: 1rem;
-    width: 4rem;
+    border-radius: .5rem;
+    height: 6rem;
+    margin-bottom: .5rem;
+    margin-left: .5rem;
+    width: 6rem;
 }
 
 .thumbnailButton img {
-    height: 4rem;
-    margin: 0;
-    width: 4rem;
+    border-radius: .5rem;
+    height: 6rem;
+    margin-bottom: .5rem;
+    width: 6rem;
 }
