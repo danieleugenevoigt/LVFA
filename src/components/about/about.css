@@ -12,17 +12,32 @@
     font-size: 1rem;
     line-height: 150%;
 
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-
   }
 
-  .about {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 60vh;
-    max-width: 60vw;
-    text-align: left;
-  }
+.about {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  text-align: left;
+}
+
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Maintain 16:9 aspect ratio (adjust as needed) */
+  overflow: hidden; /* Hide any overflow beyond the container */
+}
+
+.videoContainer video {
+  position: absolute;
+  top: 0;
+  left: -10rem;
+  width: 100%; 
+  height: 100%;  
+  object-fit: contain; 
+}
+

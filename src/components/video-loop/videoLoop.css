@@ -1,6 +1,10 @@
 .videoContainer {
-    border: 1px solid var(--primary-text-color);
-    border-radius: 5px;
-    height: 30vh;
-    width: 50%;
+    height: auto;
+}
+video{
+    position:relative;
+    bottom: 8vh;
+    left: 6vw;
+    height: 25%;
+    width: 25%
 }
