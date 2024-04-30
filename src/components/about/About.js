@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import './about.css';
+import VideoLoop from '../video-loop/VideoLoop';
 
 function About() {
   return (
@@ -11,7 +12,7 @@ function About() {
         Utilizing modern software tools, I refine this vision, shaping it into a digital painting that captures the essence of my inspiration. Here, meticulous attention is paid to color palettes, layering for depth and tone, and fine-tuning details to ensure the integrity of the piece.
         Yet, it is in the transition from digital to physical that the true essence of my work emerges.
       </p>
-      <p />
+      <VideoLoop />
       <p>
         Employing the precision of CNC laser cutting, I translate the digital canvas into tangible layers of paper, each piece a fragment waiting to be assembled.
         Hand-assembling each layer, I imbue the work with a personal touch, occasionally adding or subtracting details to enhance the piece&apos;s coherence. This process of deconstruction and reconstruction allows for a deeper engagement with the work, fostering a tangible connection between creator and creation.
