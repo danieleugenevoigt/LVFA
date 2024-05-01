@@ -5,6 +5,7 @@
 }
 
 .about {
+  height: 100vh;
   width: 60vw;
   margin: 0 auto; /* Center the content horizontally */
   display: flex;
