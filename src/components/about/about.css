@@ -1,59 +1,42 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-  }
-
-  h2 {
-    font-size: 1.25rem;
-  }
-
-  p {
-    font-size: 1rem;
-    line-height: 150%;
-
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 .about {
   width: 60vw;
+  margin: 0 auto; /* Center the content horizontally */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-
-
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.rowOne {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin-left: 20vw;
-  margin-right: 20vw;
+.colOne {
+  width: 30vw; /* Adjust based on the desired space */
   text-align: left;
 }
 
-.rowTwo {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin-left: 20vw;
- 
-  text-align: left;
+.colTwo {
+width: 30vw;
+
 }
 
-.rowOne video {
-  position: absolute;
-  top: 3rem;
-  left: 16rem;
-  width: 90%; 
-  height: 90%;  
-  object-fit: contain; 
+.colTwo .videoContainer {
+  border-radius: 5px;
+  margin-left:5vw;
+  margin-top: 3rem;
+  max-width: 100%; /* Ensure video doesn't exceed its container */
+  box-shadow: 5px, 5px, 5px;
 }
-/* .videoContainer {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; /* Maintain 16:9 aspect ratio (adjust as needed) 
-  overflow: hidden; /* Hide any overflow beyond the container 
-} */
 
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
 
 
