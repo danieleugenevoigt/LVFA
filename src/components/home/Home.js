@@ -1,7 +1,17 @@
 import React from 'react';
 import './home.css';
+import Slideshow from '../slideshow/Slideshow';
 
 function Home() {
+  const baseUrl = `${process.env.PUBLIC_URL}/images/car-`;
+  const imageUrls = [
+    `${baseUrl}${1}.png`,
+    `${baseUrl}${2}.png`,
+    `${baseUrl}${3}.png`,
+    `${baseUrl}${4}.png`,
+    `${baseUrl}${5}.png`,
+    `${baseUrl}${6}.png`,
+  ];
   return (
     <div className="home">
       <p>
@@ -11,6 +21,7 @@ function Home() {
         news, and events.
         {' '}
       </p>
+      <Slideshow imageUrls={imageUrls} />
     </div>
   );
 }
