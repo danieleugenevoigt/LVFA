@@ -20,7 +20,7 @@ function About() {
       </div>
       <div className="colTwo">
         <video autoPlay muted className="videoContainer">
-          <source src={`${process.env.PUBLIC_URL}/videos/lvfa-timelapse-trapped.mp4`} alt="timelapse video" type="video/mp4" />
+          <source src={`${process.env.PUBLIC_URL}/videos/lvfa-timelapse-trapped-low.mp4`} alt="timelapse video" type="video/mp4" />
           {/* Add additional <source> tags for other video formats like webm, ogg, etc. */}
           Your browser does not support the video tag.
         </video>
