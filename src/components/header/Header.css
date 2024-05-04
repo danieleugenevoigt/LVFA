@@ -14,9 +14,40 @@ h1 {
   background-image: linear-gradient(to bottom, var(--primary-gradient-color), var(--secondary-gradient-color));
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: center; /* Center vertically */
   min-height: 15vh;
+  margin-bottom: 2rem;
   width: 100vw;
+  position: relative; /* Position relative for absolute positioning of menu */
+}
+
+.navToggle {
+  display: none; /* Hide by default */
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: transform 0.4s ease, opacity 0.4s ease; /* Transition for transform and opacity */
+}
+
+/* Rotate first and third bar for hamburger animation */
+.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0; /* Hide the middle bar when menu is open */
+}
+
+.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .navMenu {
@@ -36,28 +67,34 @@ h1 {
 /* Phone Media Query */
 @media (max-width: 480px) {
   h1 {
-    align-self: center;
     font-size: 1.5rem;
-
   }
 
-  .headerMain {
-    align-items: first baseline;
+  .navToggle {
+    display: block; /* Show the toggle button */
   }
 
   .navMenu {
-    display: flex;
+    display: none; /* Hide the menu items by default */
     flex-direction: column;
-    list-style-type: none;
-    
+    position: absolute;
+    top: 70px; /* Adjust top position as needed */
+    left: 0;
+    background-color: var(--primary-gradient-color); /* Match header background */
+    width: 100vw;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add box shadow */
+    z-index: 1000; /* Ensure menu appears above content */
   }
-  
+
+  /* Show the menu when 'open' class is present */
+  .navMenu.open {
+    display: flex;
+  }
+
   .navMenu li {
-    font-size: 1rem;
-justify-content: left;
-
-    margin-top: 1rem;
-    margin-bottom: 1;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    text-align: center;
   }
-
 }
