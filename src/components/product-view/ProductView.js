@@ -3,12 +3,12 @@ import './productView.css';
 
 export default function SimpleSlider() {
   const [value, setValue] = useState(50);
-  const [number, setNumber] = useState(6);
+  const [number, setNumber] = useState(13);
   const title = 'Sample art title 12" by 12" 2023';
 
   const handleChange = (event) => {
     const newValue = parseInt(event.target.value, 10);
-    let newData = Math.round((newValue * (11 / 100)));
+    let newData = Math.round((newValue * (25 / 100)));
     if (newData === 0) {
       newData = 1;
     }
@@ -18,7 +18,7 @@ export default function SimpleSlider() {
 
   return (
     <div className="container">
-      <img src={`${process.env.PUBLIC_URL}/images/art-${number}.png`} alt={`Car ${number}`} />
+      <img src={`${process.env.PUBLIC_URL}/images/art-${number}.png`} alt={`Art ${number}`} />
       <div className="imageInfo">
         <div className="slider">
           <span>View Angle:</span>

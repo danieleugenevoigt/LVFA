@@ -4,13 +4,13 @@ span {
 }
 
 .container {
-height: 80%;
+    height: 80%;
 }
 
 .container img {
-    border-radius: 1rem;
+
     height: 100%;
-    object-fit: fill;
+    object-fit: contain;
     width: 100%;
 }
 
