@@ -3,7 +3,7 @@ import './home.css';
 import Slideshow from '../slideshow/Slideshow';
 
 function Home() {
-  const baseUrl = `${process.env.PUBLIC_URL}/images/car-`;
+  const baseUrl = `${process.env.PUBLIC_URL}/images/slideshow-`;
   const imageUrls = [
     `${baseUrl}${1}.png`,
     `${baseUrl}${2}.png`,
