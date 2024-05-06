@@ -1,53 +1,53 @@
 const product1 = {
-  title: 'Inside Man',
+  title: 'Contemplation',
   size: '12" by 12" ',
   imageArray: ['/images/slideshow-1.png', '/images/slideshow-1.png'],
-  description: 'Someone who knows too much about themself should keep it a secret.',
+  description: 'Mixed Media',
   status: 'Sold',
   price: '$475',
 };
 
 const product2 = {
-  title: 'The Liar',
+  title: 'Dejection',
   size: '12" by 12" ',
   imageArray: ['/images/slideshow-2.png', '/images/slideshow-2.png'],
-  description: 'Would you trust me?  Would you trust yourself with me?',
+  description: 'Mixed Media',
   status: 'Available',
   price: '$475',
 };
 
 const product3 = {
-  title: 'Inside Man',
+  title: 'Hopeful',
   size: '12" by 12" ',
   imageArray: ['/images/slideshow-3.png', '/images/slideshow-3.png'],
-  description: 'Someone who knows too much about themself should keep it a secret.',
+  description: 'Mixed Media',
   status: 'Sold',
   price: '$475',
 };
 
 const product4 = {
-  title: 'The Liar',
+  title: 'Hopeless',
   size: '12" by 12" ',
   imageArray: ['/images/slideshow-4.png', '/images/slideshow-4.png'],
-  description: 'Would you trust me?  Would you trust yourself with me?',
+  description: 'Mixed Media',
   status: 'Available',
   price: '$475',
 };
 
 const product5 = {
-  title: 'Inside Man',
+  title: 'Lost',
   size: '12" by 12" ',
   imageArray: ['/images/slideshow-5.png', '/images/slideshow-5.png'],
-  description: 'Someone who knows too much about themself should keep it a secret.',
+  description: 'Mixed Media',
   status: 'Sold',
   price: '$475',
 };
 
 const product6 = {
-  title: 'The Liar',
+  title: 'Plea',
   size: '12" by 12" ',
   imageArray: ['/images/slideshow-6.png', '/images/slideshow-6.png'],
-  description: 'Would you trust me?  Would you trust yourself with me?',
+  description: 'Mixed Media',
   status: 'Available',
   price: '$475',
 };
