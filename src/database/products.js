@@ -52,6 +52,15 @@ const product6 = {
   price: '$475',
 };
 
-const productList = [product1, product2, product3, product4, product5, product6];
+const product7 = {
+  title: 'Trapped',
+  size: '12" by 12" ',
+  imageArray: ['/images/slideshow-7.png', '/images/slideshow-7.png'],
+  description: 'Mixed Media',
+  status: 'Available',
+  price: '$475',
+};
+
+const productList = [product1, product2, product3, product4, product5, product6, product7];
 
 export default productList;
