@@ -2,5 +2,10 @@
     width: 60vw;
 }
 
+@media (max-width: 480px) {
+    .artworkViewer{
+        width: 80vw;
+    }
+}
 
 

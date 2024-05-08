@@ -27,3 +27,34 @@
     margin-bottom: .5rem;
     width: 6rem;
 }
+
+/* Phone Media Query */
+@media (max-width: 480px) {
+    .galleryContainer {
+        align-content:flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: left;
+        padding: 0%;
+        width: 40%;
+    }
+
+    .thumbnailButton {
+        appearance: none;
+        border: none;
+        border-radius: .5rem;
+        height: 4rem;
+        margin-bottom: .5rem;
+        margin-left: .5rem;
+        width: 4rem;
+    }
+    
+    .thumbnailButton img {
+        border-radius: .5rem;
+        height: 4rem;
+        margin-bottom: .5rem;
+        width: 4rem;
+    }
+}
