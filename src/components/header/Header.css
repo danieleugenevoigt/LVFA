@@ -29,6 +29,10 @@ h1 {
   right: 15px;
 }
 
+.active {
+  color: var(--link-color);
+}
+
 .bar {
   width: 25px;
   height: 3px;
