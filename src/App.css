@@ -3,6 +3,7 @@ a {
   text-decoration: none;
 }
 
+
 a:hover{
   text-decoration:underline;
 }
@@ -13,6 +14,7 @@ a:hover{
   --secondary-gradient-color: #45494E ;
   --primary-text-color: antiquewhite;
   --background-color: #45494E;
+  --link-color: #9f9ff3;
 }
  
  .App {
