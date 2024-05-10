@@ -1,0 +1,32 @@
+.eventDescription {
+    display: flex;
+    flex-direction: row;
+    align-content: left;
+}
+
+.eventsPageContent {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    margin-left: 4rem;
+    margin-right: 50%;
+    text-align: left;
+}
+
+.event {
+    align-content: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    text-align: left;
+    width: 30vw;
+
+}
+
+@media (max-width: 480px) {
+.eventsPageContent {
+    display: flex;
+    flex-direction: column;
+}
+}

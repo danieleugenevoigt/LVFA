@@ -13,7 +13,7 @@ import Footer from './components/footer/Footer';
 import Gallery from './components/gallery/Gallery';
 import About from './components/about/About';
 import News from './components/news/News';
-import Events from './components/events/Events';
+import Exhibition from './components/exhibition/Exhibition';
 import Contact from './components/contact/Contact';
 import PageNotFound from './components/page-not-found/PageNotFound';
 
@@ -27,7 +27,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
           <Route path="/news" element={<News />} />
-          <Route path="/events" element={<Events />} />
+          <Route path="/exhibition" element={<Exhibition />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
