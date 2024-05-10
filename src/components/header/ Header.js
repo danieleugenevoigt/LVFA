@@ -34,7 +34,6 @@ function Header() {
         <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
         <li><NavLink to="/gallery" activeClassName="active">Gallery</NavLink></li>
         <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
-        <li><NavLink to="/news" activeClassName="active">News</NavLink></li>
         <li><NavLink to="/exhibition" activeClassName="active">Exhibition</NavLink></li>
         <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
       </ul>
