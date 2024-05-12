@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 
@@ -31,11 +32,11 @@ function Header() {
         <div className="bar" />
       </div>
       <ul className={`navMenu ${isMenuOpen ? 'open' : ''}`}>
-        <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
-        <li><NavLink to="/gallery" activeClassName="active">Gallery</NavLink></li>
-        <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
-        <li><NavLink to="/exhibition" activeClassName="active">Exhibition</NavLink></li>
-        <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
+        <li><NavLink exact to="/" activeClassName="active" onClick={handleToggleMenu}>Home</NavLink></li>
+        <li><NavLink to="/gallery" activeClassName="active" onClick={handleToggleMenu}>Gallery</NavLink></li>
+        <li><NavLink to="/about" activeClassName="active" onClick={handleToggleMenu}>About</NavLink></li>
+        <li><NavLink to="/exhibition" activeClassName="active" onClick={handleToggleMenu}>Exhibition</NavLink></li>
+        <li><NavLink to="/contact" activeClassName="active" onClick={handleToggleMenu}>Contact</NavLink></li>
       </ul>
     </div>
   );
