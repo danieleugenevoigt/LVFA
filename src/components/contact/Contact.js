@@ -62,8 +62,9 @@ function Contact() {
               <Field as="textarea" id="message" name="message" />
               <ErrorMessage name="message" component="div" className="error" />
             </div>
-
-            <button type="submit">Submit</button>
+            <div className="button-container">
+              <button type="submit">Submit</button>
+            </div>
           </Form>
         )}
       </Formik>
