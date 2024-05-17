@@ -29,7 +29,7 @@
     align-content: center;
 }
 
-input {
+.formik input {
     background-color: var(--primary-text-color);
     border: none;
     margin-top: 2rem;

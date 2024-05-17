@@ -1,14 +1,15 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import './productView.css';
 
-export default function SimpleSlider() {
+export default function SimpleSlider({ folder, size }) {
   const [value, setValue] = useState(50);
-  const [number, setNumber] = useState(13);
-  const title = 'Sample art title 12" by 12" 2023';
+  const [number, setNumber] = useState(16);
 
   const handleChange = (event) => {
     const newValue = parseInt(event.target.value, 10);
-    let newData = Math.round((newValue * (25 / 100)));
+    let newData = Math.round((newValue * (31 / 100)));
     if (newData === 0) {
       newData = 1;
     }
@@ -16,9 +17,14 @@ export default function SimpleSlider() {
     setValue(newValue);
   };
 
+  SimpleSlider.propTypes = {
+    folder: PropTypes.string.isRequired,
+    size: PropTypes.string.isRequired,
+  };
+
   return (
     <div className="container">
-      <img src={`${process.env.PUBLIC_URL}/images/art-${number}.png`} alt={`Art ${number}`} />
+      <img src={`${process.env.PUBLIC_URL}/images/${folder}/art-${number}.png`} alt={`Art ${number}`} />
       <div className="imageInfo">
         <div className="slider">
           <span>View Angle:</span>
@@ -31,7 +37,8 @@ export default function SimpleSlider() {
             onChange={handleChange}
           />
         </div>
-        <h2 className="title">{title}</h2>
+        <h2 className="title">{`" ${folder} "  `}</h2>
+        <h2 className="title">{`  ${size} `}</h2>
       </div>
     </div>
   );

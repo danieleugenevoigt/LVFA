@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './gallery.css';
 import ArtworkViewer from '../artwork-Viewer/ArtworkViewer';
 import GalleryCatalog from '../gallery-catalog/GalleryCatalog';
 import products from '../../database/products';
 
 function Gallery() {
-  function onClick() {
-    console.log('clicked');
-  }
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const handleThumbnailClick = (product) => {
+    setSelectedProduct(product);
+  };
   return (
     <div className="galleryPageContent">
-      <ArtworkViewer />
-      <GalleryCatalog catalog={products} onThumbnailClick={onClick()} />
+      <ArtworkViewer product={selectedProduct || products[0]} />
+      <GalleryCatalog catalog={products} onThumbnailClick={handleThumbnailClick} />
     </div>
   );
 }
