@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './productView.css';
 
@@ -21,6 +21,11 @@ export default function SimpleSlider({ folder, size }) {
     folder: PropTypes.string.isRequired,
     size: PropTypes.string.isRequired,
   };
+
+  useEffect(() => {
+    setValue(50);
+    setNumber(16);
+  }, [folder]);
 
   return (
     <div className="container">
