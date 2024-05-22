@@ -4,6 +4,7 @@
 
 @media (max-width: 480px) {
     .artworkViewer{
+        margin-bottom: 1ren;
         width: 80vw;
     }
 }
