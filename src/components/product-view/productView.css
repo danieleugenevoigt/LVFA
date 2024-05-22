@@ -18,12 +18,15 @@ span {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 1rem;
+    width: 80%;
 }
 
 .slider {
-    width: 300px;
+    min-width: 200px;
 }
 
 .sliderSetup {
@@ -57,8 +60,14 @@ span {
     cursor: pointer; /* Cursor style for interaction */
 }
 
-.title {
+.title-left {
     font-size: 1rem;
+    margin-left: 2rem;
+}
+
+.title-right {
+    font-size: 1rem;
+    margin-left: auto;
 }
 
 @media (max-width: 480px) {

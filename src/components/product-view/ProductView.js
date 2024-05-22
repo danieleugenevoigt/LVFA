@@ -42,8 +42,8 @@ export default function SimpleSlider({ folder, size }) {
             onChange={handleChange}
           />
         </div>
-        <h2 className="title">{`" ${folder} "  `}</h2>
-        <h2 className="title">{`  ${size} `}</h2>
+        <h2 className="title-left">{`" ${folder} "  `}</h2>
+        <h2 className="title-right">{`  ${size} `}</h2>
       </div>
     </div>
   );
