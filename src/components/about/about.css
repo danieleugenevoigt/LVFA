@@ -9,7 +9,7 @@ h2 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.5;
 }
 
@@ -41,7 +41,7 @@ width: 30vw;
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   .about {
     flex-direction: column-reverse;
     align-items: center;
@@ -60,6 +60,10 @@ width: 30vw;
   .colTwo .videoContainer {
     margin-left: 0; /* Reset margin for center alignment */
     margin-top: 0;
+  }
+
+  p {
+    font-size: 1rem;
   }
 }
 

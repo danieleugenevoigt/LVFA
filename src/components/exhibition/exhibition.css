@@ -59,7 +59,7 @@
     width: 25vw;
     }
 
-    p {
+    .event p {
         font-size: .8rem;
     }
 }
