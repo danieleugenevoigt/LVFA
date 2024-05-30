@@ -27,7 +27,7 @@
   }
 
   /* Tablet Media Query */
-@media (max-width: 800px) {
+@media (max-width: 840px) {
   .home {
     max-width: 80vw; /* Adjust the width for tablet screens */
     padding: 20px; /* Example: add padding for smaller screens */
@@ -38,7 +38,7 @@
   }
 
   .home p {
-    width: 60vw; /* Adjust paragraph width */
+    width: 80vw; /* Adjust paragraph width */
   }
 }
 

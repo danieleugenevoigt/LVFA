@@ -28,8 +28,8 @@
   opacity: 0;
 }
 
-/* Phone Media Query */
-@media (max-width: 480px) {
+/* Phone + Tablet Media Query */
+@media (max-width: 880px) {
   .slideshow-container {
     border-radius: 10px;
     box-shadow: 5px 5px 25px 5px var(--primary-gradient-color);
@@ -47,7 +47,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: none;
+  object-fit: cover;
   transition: opacity 2s ease-in-out; /* Apply opacity transition */
 }
 }
