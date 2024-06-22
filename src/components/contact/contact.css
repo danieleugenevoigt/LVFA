@@ -43,3 +43,93 @@
     overflow: hidden;;
     width: 100vw;
 }
+
+@media (max-width: 1600px) {
+
+    .contactPageContent {
+        align-content: left;
+        display: flex;
+        flex-direction: column;
+        height: 73vh;
+    }
+    
+    .imageCard .artistPhoto img{
+        border-radius: 5px;
+        height: 80vh;
+        margin-top: 1rem;;
+        object-fit: cover ;
+        overflow: hidden;
+        width: 30vw;
+        
+    }
+    
+    .imageCard .artistWorkingPhoto img{
+        border-radius: 5px;
+        height: 80vh;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;;
+        object-fit: cover ;
+        overflow: hidden;
+        width: 30vw;
+    }
+    
+    .imageCard .artistWorkingDetailPhoto img{
+        border-radius: 5px;
+        height: 80vh;
+        margin-top: 1rem;;
+        object-fit: cover ;
+        overflow: hidden;
+        width: 30vw;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .contactPageContent {
+        align-content: left;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-left: 0;
+        margin-right: .5rem;
+    }
+    .imageCard {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .imageCard .artistPhoto img{
+        border-radius: 5px;
+        height: 50vh;
+        margin-top: 1rem;;
+        object-fit: cover ;
+        overflow: hidden;
+        width: 85vw;
+        
+    }
+    
+    .imageCard .artistWorkingPhoto img{
+        border-radius: 5px;
+        height: 50vh;
+        margin-top: 1rem;;
+        object-fit: cover ;
+        overflow: hidden;
+        width: 85vw;
+    }
+    
+    .imageCard .artistWorkingDetailPhoto img{
+        border-radius: 5px;
+        height: 50vh;
+        margin-top: 1rem;;
+        object-fit: cover ;
+        overflow: hidden;
+        width: 85vw;
+    }
+
+
+}

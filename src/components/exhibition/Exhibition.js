@@ -18,8 +18,8 @@ function Exhibition() {
       <div className="col2">
         <h2>Viewing</h2>
         <div className="event">
-          <a href="http://www.stoneheartgallery.com/home.html">Stoneheart Gallery</a>
-          <p> Jun 2024 - Current</p>
+          <a href="http://www.stoneheartgallery.com/home.html">Currently Seeking Galleries</a>
+          <p> Jul 2024 - Current</p>
         </div>
       </div>
     </div>
