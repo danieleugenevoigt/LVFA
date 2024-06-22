@@ -1,47 +1,45 @@
 .contactPageContent {
+    align-content: left;
     display: flex;
     flex-direction: column;
     height: 73vh;
-    align-content: left;
 }
 
-.formik {
-    background-color: var(--primary-text-color);
-    border-radius: 10px;;
-    height: 50vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4rem;
-    width: 50vw;
-    text-align: left;
-    color: var(--primary-gradient-color);
+.imageCard .artistPhoto img{
+    height: 80vh;
+    margin-top: 1rem;;
+    object-fit: cover ;
+    overflow: hidden;
+    width: 20vw;
+    
 }
 
-.formik button {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
+.imageCard .artistWorkingPhoto img{
+    height: 80vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;;
+    object-fit: cover ;
+    overflow: hidden;
+    width: 20vw;
 }
 
-.button-container {
+.imageCard .artistWorkingDetailPhoto img{
+    height: 80vh;
+    margin-top: 1rem;;
+    object-fit: cover ;
+    overflow: hidden;
+    width: 20vw;
+}
+
+.imageCard {
+    align-content: center;
     display: flex;
     flex-direction: row;
-    align-content: center;
-}
-
-.formik input {
-    background-color: var(--primary-text-color);
-    border: none;
-    margin-top: 2rem;
-    min-height: 2rem;
-}
-
-label {
-    margin-left: 2rem;
-}
-
-textarea {
-    background-color: var(--primary-text-color);
-    border: none;
-    min-height: 6rem;
+    height: 70vh;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;;
+    width: 100vw;
 }
