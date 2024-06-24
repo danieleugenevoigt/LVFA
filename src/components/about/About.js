@@ -16,18 +16,27 @@ function About() {
         <br />
         <p>
           Yet, it is in the transition from digital to physical that the true essence of my work emerges. Employing the precision of CNC laser cutting, I translate the digital canvas into tangible layers of paper.
-
           I then hand assemble each layer, piece by piece, eventually producing the final work of art.
-
+        </p>
+        <br />
+        <br />
+        <p>
           In this synthesis of modern technology and traditional craftsmanship, I find fulfillment in the act of creation. It is a process that honors both the innovation of digital tools and the timeless beauty of paper as a medium of expression.
         </p>
       </div>
       <div className="colTwo">
         <video autoPlay muted className="videoContainer">
           <source src={`${process.env.PUBLIC_URL}/videos/lvfa-timelapse-trapped-low.mp4`} alt="timelapse video" type="video/mp4" />
-          {/* Add additional <source> tags for other video formats like webm, ogg, etc. */}
           Your browser does not support the video tag.
         </video>
+        <div className="imageContainer">
+          <div className="artistWorkingPhoto">
+            <img src={`${process.env.PUBLIC_URL}/images/Lauren-Working.jpg`} alt="The Artist Working" />
+          </div>
+          <div className="artistWorkingDetailPhoto">
+            <img src={`${process.env.PUBLIC_URL}/images/Lauren-Working-Detail.jpg`} alt="The Artist Working Close Up" />
+          </div>
+        </div>
       </div>
     </div>
   );

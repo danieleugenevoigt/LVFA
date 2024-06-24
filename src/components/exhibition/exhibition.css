@@ -1,17 +1,24 @@
+a {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+
 .col1 {
     display: flex;
     flex-direction: column;
-
-    margin-left: 15vw;
-
+    margin-left: 10vw;
     text-align: left;
+    width: 30vw;
 }
 
 .col2 {
     display: flex;
     flex-direction: column;
-
-    margin-right: 0vw;
+    margin-right: 2rem;
     text-align: left;
 }
 
@@ -22,7 +29,7 @@
     justify-content: space-between;
     margin-top: 1rem;
     text-align: left;
-    width: 25vw;
+    width: 35vw;
 }
 
 .event a {
@@ -43,12 +50,12 @@
 .eventsPageContent {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
     height: 73vh;
-
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1400px) {
     .event {
     align-content: left;
     display: flex;
@@ -59,8 +66,8 @@
     width: 25vw;
     }
 
-    .event p {
-        font-size: .8rem;
+    .event a p {
+        font-size: 1rem;
     }
 }
 

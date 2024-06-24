@@ -33,11 +33,43 @@ width: 30vw;
 }
 
 .colTwo .videoContainer {
-  border-radius: 5px;
+
   margin-left:5vw;
   margin-top: 2.5rem;
   max-width: 100%; /* Ensure video doesn't exceed its container */
-  box-shadow: 0px 0px 5px 5px var(--primary-gradient-color);
+  box-shadow: 10px 10px 5px 0px var(--primary-gradient-color);
+}
+
+.imageContainer {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  justify-content: center;
+  margin-left: 5vw;
+  margin-right: auto;
+  overflow: hidden;;
+  width: 30vw;
+}
+
+.imageContainer .artistWorkingPhoto img{
+
+  height: 80vh;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;;
+  object-fit: cover ;
+  overflow: hidden;
+  width: 20vw;
+}
+
+.imageContainer .artistWorkingDetailPhoto img{
+
+  height: 80vh;
+  margin-top: 1rem;;
+  object-fit: cover ;
+  overflow: hidden;
+  width: 20vw;
 }
 
 
@@ -60,6 +92,10 @@ width: 30vw;
   .colTwo .videoContainer {
     margin-left: 0; /* Reset margin for center alignment */
     margin-top: 0;
+  }
+
+  .imageContainer {
+    display: none;
   }
 
   p {
