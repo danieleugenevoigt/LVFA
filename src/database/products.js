@@ -61,6 +61,25 @@ const product7 = {
   price: '$475',
 };
 
-const productList = [product1, product2, product3, product4, product5, product6, product7];
+const product8 = {
+  title: 'Broken',
+  size: '12" by 12" ',
+  imageArray: ['/images/slideshow-8.png', '/images/slideshow-8.png'],
+  description: 'Mixed Media',
+  status: 'Available',
+  price: '$475',
+};
+
+const product9 = {
+  title: 'Hidden',
+  size: '12" by 12" ',
+  imageArray: ['/images/slideshow-9.png', '/images/slideshow-9.png'],
+  description: 'Mixed Media',
+  status: 'Available',
+  price: '$475',
+};
+
+const productList = [product1, product2, product3, product4,
+  product5, product6, product7, product8, product9];
 
 export default productList;

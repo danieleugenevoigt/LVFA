@@ -11,14 +11,15 @@ function Home() {
     `${baseUrl}${4}.png`,
     `${baseUrl}${5}.png`,
     `${baseUrl}${6}.png`,
+    `${baseUrl}${7}.png`,
+    `${baseUrl}${8}.png`,
+    `${baseUrl}${9}.png`,
   ];
   return (
     <div className="home">
       <p>
         Welcome to Lauren Voigt Fine Art.
         It is a joy to share my creations with you.
-        Be sure to join the mailing list to be notified about new work,
-        news, and events.
         {' '}
       </p>
       <Slideshow imageUrls={imageUrls} />
