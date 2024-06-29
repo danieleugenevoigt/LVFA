@@ -1,7 +1,3 @@
-a {
-    font-size: 1.5rem;
-}
-
 h2 {
     font-size: 2rem;
 }
@@ -14,6 +10,11 @@ h2 {
     text-align: left;
     width: 30vw;
 }
+
+.col1 a {
+    font-size: 1.5rem;
+}
+
 
 .col2 {
     display: flex;

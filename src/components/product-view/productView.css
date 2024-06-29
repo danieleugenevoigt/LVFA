@@ -123,6 +123,7 @@ div .slider {
     flex-direction: column;
     align-items: center;
     margin-bottom: .5rem;
+    margin-left: auto;
     margin-top: .5rem;
 }
 
@@ -131,7 +132,8 @@ div .slider {
 }
 .title-left {
     font-size: 1rem;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title-right {
