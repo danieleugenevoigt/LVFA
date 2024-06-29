@@ -7,7 +7,13 @@ function Exhibition() {
       <div className="col1">
         <h2>Upcoming Events</h2>
         <div className="event">
-          <a href="https://www.evergreenfineartsfestival.com/">Evergreen Fine Arts Festival</a>
+          <a
+            href="https://www.evergreenfineartsfestival.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Evergreen Fine Arts Festival
+          </a>
           <p> Aug 23-24 </p>
           {/* <p>10-5p</p> */}
         </div>
