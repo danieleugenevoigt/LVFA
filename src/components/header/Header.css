@@ -60,12 +60,12 @@ h1 {
   list-style-type: none;
 }
 
- .navMenu li {
-  font-size: 1.5rem;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1;
+ .navMenu li a {
+  font-size: 1.5rem !important;
+  margin-left: 2.5rem !important;
+  margin-right: 2.5rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1 !important;
 }
 
 /* Phone Media Query */
