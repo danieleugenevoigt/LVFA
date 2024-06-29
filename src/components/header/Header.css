@@ -58,10 +58,11 @@ h1 {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  margin-top: 1rem;
 }
 
  .navMenu li a {
-  font-size: 1rem !important;
+  font-size: 1.5rem !important;
   margin-left: 2.5rem !important;
   margin-right: 2.5rem !important;
   margin-top: 1rem !important;
