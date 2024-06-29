@@ -1,10 +1,27 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable max-len */
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './about.css';
 
 function About() {
   return (
     <div className="about">
+      <Helmet>
+        <title>Home - Lauren Voigt Fine Art</title>
+        <meta name="description" content="Welcome to the About page of Lauren Voigt Fine Art" />
+        <meta name="keywords" content="Lauren Voigt, Fine Art, About page, Timelapse Video, Art Gallery" />
+        <meta property="og:title" content="About - Lauren Voigt Fine Art" />
+        <meta property="og:description" content="Welcome to the About page of Lauren Voigt Fine Art" />
+        <meta property="og:image" content="%PUBLIC_URL%/lvfa-home.jpg" />
+        <meta property="og:url" content="https://laurenvoigtfineart.com/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About - Lauren Voigt Fine Art" />
+        <meta name="twitter:description" content="Welcome to the About page of Lauren Voigt Fine Art" />
+        <meta name="twitter:image" content="%PUBLIC_URL%/lvfa-home.jpg" />
+        <link rel="canonical" href="https://laurenvoigtfineart.com/" />
+      </Helmet>
       <div className="colOne">
         <h2>The Process</h2>
         <p>
