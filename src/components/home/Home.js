@@ -7,15 +7,15 @@ import Slideshow from '../slideshow/Slideshow';
 function Home() {
   const baseUrl = `${process.env.PUBLIC_URL}/images/slideshow-`;
   const imageUrls = [
-    `${baseUrl}${1}.png`,
-    `${baseUrl}${2}.png`,
-    `${baseUrl}${3}.png`,
-    `${baseUrl}${4}.png`,
-    `${baseUrl}${5}.png`,
-    `${baseUrl}${6}.png`,
-    `${baseUrl}${7}.png`,
-    `${baseUrl}${8}.png`,
-    `${baseUrl}${9}.png`,
+    `${baseUrl}${1}.webp`,
+    `${baseUrl}${2}.webp`,
+    `${baseUrl}${3}.webp`,
+    `${baseUrl}${4}.webp`,
+    `${baseUrl}${5}.webp`,
+    `${baseUrl}${6}.webp`,
+    `${baseUrl}${7}.webp`,
+    `${baseUrl}${8}.webp`,
+    `${baseUrl}${9}.webp`,
   ];
   return (
     <div className="home">

@@ -29,7 +29,7 @@ export default function SimpleSlider({ folder, size }) {
 
   return (
     <div className="container">
-      <img src={`${process.env.PUBLIC_URL}/images/${folder}/art-${number}.png`} alt={`Art ${number}`} />
+      <img src={`${process.env.PUBLIC_URL}/images/${folder}/art-${number}.webp`} alt={`Art ${number}`} />
       <div className="imageInfo">
         <div className="slider">
           <span>View Angle:</span>
