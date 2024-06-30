@@ -31,7 +31,7 @@ function Exhibition() {
           >
             Evergreen Fine Arts Festival
           </a>
-          <p> Aug 23-24 </p>
+          <p> Aug 24-25 2024 </p>
           {/* <p>10-5p</p> */}
         </div>
         <div className="eventDescription">
