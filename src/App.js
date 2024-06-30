@@ -5,6 +5,7 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
+import { PreloadProvider } from './context/PreloadContext';
 
 import './App.css';
 import Home from './components/home/Home';
@@ -18,20 +19,23 @@ import PageNotFound from './components/page-not-found/PageNotFound';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/exhibition" element={<Exhibition />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </div>
+    <PreloadProvider>
+      <div className="App">
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/exhibition" element={<Exhibition />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </div>
+    </PreloadProvider>
+
   );
 }
 

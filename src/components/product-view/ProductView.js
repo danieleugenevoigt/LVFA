@@ -1,14 +1,13 @@
-/* eslint-disable no-plusplus */
-/* eslint-disable no-loop-func */
 /* eslint-disable import/no-extraneous-dependencies */
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './productView.css';
+import { PreloadContext } from '../../context/PreloadContext';
 
 export default function SimpleSlider({ folder, size }) {
   const [value, setValue] = useState(50);
   const [number, setNumber] = useState(16);
-  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const { imagesLoaded } = useContext(PreloadContext);
 
   const handleChange = (event) => {
     const newValue = parseInt(event.target.value, 10);
@@ -20,29 +19,7 @@ export default function SimpleSlider({ folder, size }) {
     setValue(newValue);
   };
 
-  const preloadImage = (url, onLoad) => {
-    const img = new Image();
-    img.src = url;
-    img.onload = onLoad;
-  };
-
   useEffect(() => {
-    const preloadImages = () => {
-      const totalImages = 31;
-      let loadedCount = 0;
-
-      for (let i = 1; i <= totalImages; i++) {
-        const url = `${process.env.PUBLIC_URL}/images/${folder}/art-${i}.png`;
-        preloadImage(url, () => {
-          loadedCount++;
-          if (loadedCount === totalImages) {
-            setImagesLoaded(true);
-          }
-        });
-      }
-    };
-
-    preloadImages();
     setValue(50);
     setNumber(16);
   }, [folder]);
