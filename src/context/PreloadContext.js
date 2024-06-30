@@ -8,7 +8,17 @@ import { preloadImages } from '../utills/preloadImages';
 export const PreloadContext = createContext();
 
 // Define the list of folder names
-const folders = ['folder1', 'folder2', 'folder3']; // Replace with your actual folder names
+const folders = [
+  'Broken',
+  'Contemplation',
+  'Dejection',
+  'Hidden',
+  'Hopefull',
+  'Hopeless',
+  'Lost',
+  'Plea',
+  'Trapped',
+];
 
 export function PreloadProvider({ children }) {
   const [imagesLoaded, setImagesLoaded] = useState(false);
