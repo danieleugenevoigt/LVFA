@@ -69,6 +69,17 @@ span {
     margin-left: auto;
 }
 
+/* Targeting iPad Pro in landscape mode */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) {
+  
+  .container img {
+   height: auto;
+  }
+}
+
 @media (max-width: 1024px) {
     .container img {
         height: 30vh;
