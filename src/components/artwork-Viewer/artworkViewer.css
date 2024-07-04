@@ -3,7 +3,7 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
     .artworkViewer{
         margin-bottom: 1ren;
         width: 80vw;

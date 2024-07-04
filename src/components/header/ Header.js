@@ -19,6 +19,7 @@ function Header() {
   return (
     <div className="headerMain">
       <h1>Lauren Voigt Fine Art</h1>
+      <p>Hand Crafted 3D Paper Artwork</p>
       <div
         className={`navToggle ${isMenuOpen ? 'open' : ''}`}
         role="button"

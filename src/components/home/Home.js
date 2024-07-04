@@ -34,12 +34,13 @@ function Home() {
         <meta name="twitter:image" content="%PUBLIC_URL%/lvfa-home.jpg" />
         <link rel="canonical" href="https://laurenvoigtfineart.com/" />
       </Helmet>
-      <p>
+      <Slideshow imageUrls={imageUrls} />
+      <p className="welcomeMsg">
         Welcome to Lauren Voigt Fine Art.
-        It is a joy to share my creations with you.
+        My works are each created from digital art, which are then transformed into lasercut paper
+        and arranged by hand into the final product.
         {' '}
       </p>
-      <Slideshow imageUrls={imageUrls} />
     </div>
   );
 }

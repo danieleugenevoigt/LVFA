@@ -81,20 +81,21 @@ span {
 }
 
 @media (max-width: 1024px) {
-    .container img {
+    /* .container img {
         height: 30vh;
         object-fit: contain;
         width: 100%;
-    }
+    } */
     div .slider {
         text-align: left;
         min-width: 125px;
     }
     
     .imageInfo {
-        margin-left: 2rem;
+        align-content: center;
+        margin-left: auto;
         text-align: left;
-        width: 90%;
+        width: 80%;
     }
     .title-left {
         margin-left: 0px;

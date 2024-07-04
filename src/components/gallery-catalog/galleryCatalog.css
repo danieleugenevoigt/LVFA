@@ -28,7 +28,7 @@
 }
 
 /* Phone Media Query */
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
     .galleryContainer {
         align-content:flex-start;
         display: flex;
@@ -55,5 +55,16 @@
         height: 4rem;
         margin-bottom: .5rem;
         width: 4rem;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1368px) 
+  and (max-device-width: 1824px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+    .galleryContainer {
+        margin-top: 2.5rem;
     }
 }
