@@ -37,7 +37,7 @@ function Home() {
       <Slideshow imageUrls={imageUrls} />
       <p className="welcomeMsg">
         Welcome to Lauren Voigt Fine Art.
-        My works are each created from digital art, which are then transformed into lasercut paper
+        My works are each created from digital art, which are then transformed into laser-cut paper
         and arranged by hand into the final product.
         {' '}
       </p>
