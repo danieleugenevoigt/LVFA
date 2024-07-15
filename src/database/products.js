@@ -79,7 +79,16 @@ const product9 = {
   price: '$475',
 };
 
+const product10 = {
+  title: 'Chaos',
+  size: '12" by 12" ',
+  imageArray: ['/images/slideshow-10.webp', '/images/slideshow-10.webp'],
+  description: 'Mixed Media',
+  status: 'Available',
+  price: '$475',
+};
+
 const productList = [product1, product2, product3, product4,
-  product5, product6, product7, product8, product9];
+  product5, product6, product7, product8, product9, product10];
 
 export default productList;
