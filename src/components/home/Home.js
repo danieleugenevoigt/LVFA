@@ -17,6 +17,7 @@ function Home() {
     `${baseUrl}${8}.webp`,
     `${baseUrl}${9}.webp`,
     `${baseUrl}${10}.webp`,
+    `${baseUrl}${11}.webp`,
   ];
   return (
     <div className="home">

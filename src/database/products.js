@@ -88,7 +88,17 @@ const product10 = {
   price: '$475',
 };
 
+const product11 = {
+  title: 'Crimson Echos',
+  size: '12" by 12" ',
+  imageArray: ['/images/slideshow-11.webp', '/images/slideshow-11.webp'],
+  description: 'Mixed Media',
+  status: 'Available',
+  price: '$475',
+};
+
 const productList = [product1, product2, product3, product4,
-  product5, product6, product7, product8, product9, product10];
+  product5, product6, product7, product8, product9, product10,
+  product11];
 
 export default productList;
