@@ -7,10 +7,11 @@ import './productView.css';
 export default function SimpleSlider({ folder, size }) {
   const [value, setValue] = useState(50);
   const [number, setNumber] = useState(16);
-  const [direction, setDirection] = useState('left'); // left or right
+  const [direction, setDirection] = useState('left');
   const [isAnimating, setIsAnimating] = useState(true);
   const userInteracted = useRef(false);
   const sliderRef = useRef(null);
+  const animationFrameId = useRef(null);
 
   const handleChange = (event) => {
     userInteracted.current = true;
@@ -37,17 +38,20 @@ export default function SimpleSlider({ folder, size }) {
   useEffect(() => {
     if (userInteracted.current || !isAnimating) return;
 
-    const interval = setInterval(() => {
+    const speed = 0.6; // Adjust this for desired speed
+    const animate = () => {
       setValue((prevValue) => {
         let newValue = prevValue;
         if (direction === 'left') {
-          newValue -= 1;
+          newValue -= speed;
           if (newValue <= 1) {
+            newValue = 1;
             setDirection('right');
           }
         } else {
-          newValue += 1;
+          newValue += speed;
           if (newValue >= 100) {
+            newValue = 100;
             setDirection('left');
           }
         }
@@ -59,10 +63,18 @@ export default function SimpleSlider({ folder, size }) {
         setNumber(newData);
         return newValue;
       });
-    }, direction === 'left' ? 40 : 40); // 4 seconds to move left, 8 seconds to move right
+
+      if (isAnimating) {
+        animationFrameId.current = requestAnimationFrame(animate);
+      }
+    };
+
+    animationFrameId.current = requestAnimationFrame(animate);
 
     return () => {
-      clearInterval(interval);
+      if (animationFrameId.current) {
+        cancelAnimationFrame(animationFrameId.current);
+      }
     };
   }, [direction, isAnimating]);
 
