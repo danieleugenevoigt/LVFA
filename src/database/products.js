@@ -94,11 +94,20 @@ const product11 = {
   imageArray: ['/images/slideshow-11.webp', '/images/slideshow-11.webp'],
   description: 'Mixed Media',
   status: 'Available',
-  price: '$475',
+  price: '$525',
+};
+
+const product12 = {
+  title: 'Winged Facade',
+  size: '12" by 12" ',
+  imageArray: ['/images/slideshow-12.webp', '/images/slideshow-12.webp'],
+  description: 'Mixed Media',
+  status: 'Available',
+  price: '$525',
 };
 
 const productList = [product1, product2, product3, product4,
   product5, product6, product7, product8, product9, product10,
-  product11];
+  product11, product12];
 
 export default productList;

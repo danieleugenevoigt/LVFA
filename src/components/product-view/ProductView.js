@@ -38,7 +38,7 @@ export default function SimpleSlider({ folder, size }) {
   useEffect(() => {
     if (userInteracted.current || !isAnimating) return;
 
-    const speed = 0.6; // Adjust this for desired speed
+    const speed = 0.4; // Adjust this for desired speed
     const animate = () => {
       setValue((prevValue) => {
         let newValue = prevValue;
