@@ -20,7 +20,8 @@ span {
     justify-content: left;
     margin-left: auto;
     margin-right: auto;
-    margin-top: .5rem;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
     width: 80%;
 }
 
