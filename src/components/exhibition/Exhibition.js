@@ -22,7 +22,7 @@ function Exhibition() {
         <link rel="canonical" href="https://laurenvoigtfineart.com/" />
       </Helmet>
       <div className="col1">
-        <h2>Upcoming Events</h2>
+        <h2>Events</h2>
         <div className="event">
           <a
             href="https://www.evergreenfineartsfestival.com/"
@@ -42,8 +42,14 @@ function Exhibition() {
         <h2>Viewing</h2>
         <div className="event">
           {/* <a href="http://www.stoneheartgallery.com/home.html">Currently Pursuing Galleries</a> */}
-          <p>Currently Pursuing Galleries</p>
-          <p> Jul 2024 - Current</p>
+          <a
+            href="http://www.stoneheartgallery.com/home.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Stoneheart Gallery
+          </a>
+          <p> Sept 2024 - Current</p>
         </div>
       </div>
     </div>
