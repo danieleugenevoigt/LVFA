@@ -106,8 +106,26 @@ const product12 = {
   price: '$525',
 };
 
+const product13 = {
+  title: 'Collapsed',
+  size: '12" by 12" ',
+  imageArray: ['/images/slideshow-13.webp', '/images/slideshow-13.webp'],
+  description: 'Mixed Media',
+  status: 'Available',
+  price: '$525',
+};
+
+const product14 = {
+  title: 'Mechanized',
+  size: '12" by 12" ',
+  imageArray: ['/images/slideshow-14.webp', '/images/slideshow-14.webp'],
+  description: 'Mixed Media',
+  status: 'Available',
+  price: '$525',
+};
+
 const productList = [product1, product2, product3, product4,
   product5, product6, product7, product8, product9, product10,
-  product11, product12];
+  product11, product12, product13, product14];
 
 export default productList;
