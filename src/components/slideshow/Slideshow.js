@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './slideshow.css';
 
 function Slideshow({ imageUrls }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(13);
   const slideshowRef = useRef(null);
 
   useEffect(() => {
