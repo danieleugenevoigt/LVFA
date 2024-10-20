@@ -2,17 +2,46 @@ import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import './slideshow.css';
 
-function Slideshow({ imageUrls }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+function Slideshow({ imageUrls, slideshowStartingImage }) {
+  const startingIndex = imageUrls.indexOf(slideshowStartingImage);
+  const [currentIndex, setCurrentIndex] = useState({ startingIndex });
+  const [remainingImages, setRemainingImages] = useState([]);
   const slideshowRef = useRef(null);
+
+  // Helper function to shuffle the array
+  const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
+
+  useEffect(() => {
+    // Find the index of the starting image
+    const starterIndex = imageUrls.indexOf(slideshowStartingImage);
+
+    if (starterIndex === -1) {
+      console.error('Starting image not found in imageUrls array');
+      return;
+    }
+
+    // Set the starting image and shuffle the rest of the images
+    const initialImages = [...imageUrls];
+    initialImages.splice(starterIndex, 1); // Remove starting image from the list
+    setRemainingImages(shuffleArray(initialImages)); // Shuffle the rest
+    setCurrentIndex(starterIndex);
+  }, [imageUrls, slideshowStartingImage]);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
-    }, 5000); // Change interval duration as needed (5000 ms = 5 seconds)
+      setCurrentIndex((prevIndex) => {
+        // If no more images to show, reshuffle and start a new round
+        if (remainingImages.length === 0) {
+          const reshuffledImages = shuffleArray(imageUrls);
+          setRemainingImages(reshuffledImages);
+        }
+        // Set the next image
+        return (prevIndex + 1) % imageUrls.length;
+      });
+    }, 5000); // Adjust interval duration as needed
 
     return () => clearInterval(intervalId); // Cleanup interval on component unmount
-  }, [imageUrls]); // Re-run effect if imageUrls change
+  }, [remainingImages, imageUrls]);
 
   // eslint-disable-next-line consistent-return
   useEffect(() => {
@@ -20,20 +49,22 @@ function Slideshow({ imageUrls }) {
       slideshowRef.current.classList.remove('fade-out');
       slideshowRef.current.classList.add('fade-in');
 
-      // Set timeout to trigger fade-out after a delay
       const timeoutId = setTimeout(() => {
         slideshowRef.current.classList.remove('fade-in');
         slideshowRef.current.classList.add('fade-out');
 
-        // Reset currentIndex after fade-out animation completes
         setTimeout(() => {
-          setCurrentIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
-        }, 2000); // Wait for fade-out animation duration (1000ms = 1 second)
-      }, 2000); // Wait before starting fade-out (3000ms = 3 seconds)
+          // Move to the next random image after fade-out
+          if (remainingImages.length > 0) {
+            setCurrentIndex(imageUrls.indexOf(remainingImages[0]));
+            setRemainingImages((prev) => prev.slice(1)); // Remove the displayed image
+          }
+        }, 2000); // Wait for fade-out animation duration
+      }, 2000); // Wait before starting fade-out
 
-      return () => clearTimeout(timeoutId); // Cleanup timeout on component unmount
+      return () => clearTimeout(timeoutId);
     }
-  }, [currentIndex, imageUrls]); // Re-run effect when currentIndex or imageUrls change
+  }, [currentIndex, remainingImages, imageUrls]);
 
   return (
     <div className="slideshow-container">
@@ -54,6 +85,7 @@ function Slideshow({ imageUrls }) {
 
 Slideshow.propTypes = {
   imageUrls: PropTypes.arrayOf(PropTypes.string).isRequired,
+  slideshowStartingImage: PropTypes.string.isRequired,
 };
 
 export default Slideshow;

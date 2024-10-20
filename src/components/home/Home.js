@@ -6,6 +6,7 @@ import Slideshow from '../slideshow/Slideshow';
 
 function Home() {
   const baseUrl = `${process.env.PUBLIC_URL}/images/slideshow-`;
+  const slideshowStartingImage = `${baseUrl}${14}.webp`;
   const imageUrls = [
     `${baseUrl}${1}.webp`,
     `${baseUrl}${2}.webp`,
@@ -19,6 +20,8 @@ function Home() {
     `${baseUrl}${10}.webp`,
     `${baseUrl}${11}.webp`,
     `${baseUrl}${12}.webp`,
+    `${baseUrl}${13}.webp`,
+    `${baseUrl}${14}.webp`,
   ];
   return (
     <div className="home">
@@ -37,7 +40,7 @@ function Home() {
         <meta name="twitter:image" content="%PUBLIC_URL%/lvfa-home.jpg" />
         <link rel="canonical" href="https://laurenvoigtfineart.com/" />
       </Helmet>
-      <Slideshow imageUrls={imageUrls} />
+      <Slideshow imageUrls={imageUrls} slideshowStartingImage={slideshowStartingImage} />
       <p className="welcomeMsg">
         Welcome to Lauren Voigt Fine Art.
         My works are each created from digital art, which are then transformed into laser-cut paper
