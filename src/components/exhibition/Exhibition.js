@@ -35,7 +35,7 @@ function Exhibition() {
           {/* <p>10-5p</p> */}
         </div>
         <div className="eventDescription">
-          {/* <p>Come see me at the Evergreen fine Arts Festival!</p> */}
+          <p>- Recipient of the &quot;Emerging Artist&quot; award</p>
         </div>
       </div>
       <div className="col2">
