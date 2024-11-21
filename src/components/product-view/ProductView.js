@@ -32,7 +32,8 @@ export default function SimpleSlider({ folder, size }) {
       <img src={`${process.env.PUBLIC_URL}/images/${folder}/art-${number}.webp`} alt={`Art ${number}`} />
       <div className="imageInfo">
         <div className="slider">
-          <span>View Angle:</span>
+          <span className="rotate-icon">&#x21bb;</span>
+          <span className="rotate-control">Rotate The Art!</span>
           <input
             className="sliderSetup"
             type="range"
