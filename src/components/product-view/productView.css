@@ -25,6 +25,7 @@ span {
     width: 80%;
 }
 
+
 .rotate-control {
     color: #fff;
     text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 20px orange;
@@ -63,6 +64,7 @@ span {
 
 .sliderSetup {
     appearance: none;
+    background-color: orange;
     border-radius: 5px;
     width: 100px; 
     height: 8px; 
