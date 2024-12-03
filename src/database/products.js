@@ -134,7 +134,7 @@ const product15 = {
 };
 
 const product16 = {
-  title: 'Technical Bliss',
+  title: 'Synthetic Empath',
   size: '12" by 12" ',
   imageArray: ['/images/slideshow-16.webp', '/images/slideshow-16.webp'],
   description: 'Mixed Media',
