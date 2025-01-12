@@ -34,8 +34,8 @@ function Custom() {
 
       <ArtworkViewer product={selectedProduct || customProducts[0]} />
       <div className="customPageContentLayout">
-        <h1>Your Memories</h1>
-        <h2>Meticulously Captured In The Timeless Medium Of Paper</h2>
+        <h1 className="contentToggle">Your Memories</h1>
+        <h2 className="contentToggle">Meticulously Captured In The Timeless Medium Of Paper</h2>
         <GalleryCatalog catalog={customProducts} onThumbnailClick={handleThumbnailClick} />
         <div>
           <p>

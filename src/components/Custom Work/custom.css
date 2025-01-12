@@ -40,8 +40,14 @@ div .galleryContainer {
 }
 
 @media (max-width: 1024px) {
+p {
+    padding-top: 1rem;
+}
 div .galleryContainer {
     margin-right: auto;
+}
+.contentToggle {
+    display: none;
 }
 .customPageContentLayout {
     display: flex;
@@ -57,6 +63,7 @@ div .galleryContainer {
     align-items: center;
     display: flex;
     flex-direction: column;
+    height: auto;
     width: 100vw;
 }
 }
