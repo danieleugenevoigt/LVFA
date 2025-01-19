@@ -1,7 +1,7 @@
 // import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import './landingCustom.css';
-import './landingGalleryCatalog.css';
+import styles from './landingGalleryCatalog.module.css';
 import GalleryCatalog from '../gallery-catalog/GalleryCatalog';
 // import ArtworkViewer from '../artwork-Viewer/ArtworkViewer';
 import customProducts from '../../database/customProducts';
@@ -28,9 +28,13 @@ function LandingCustom() {
 
       {/* <ArtworkViewer product={selectedProduct || customProducts[0]} /> */}
       <div className="landingCustomPageContentLayout">
-        <h1 className="landingContentToggle">Your Vision</h1>
-        <h2 className="landingContentToggle">Meticulously Captured In The Timeless Medium Of Paper</h2>
-        <GalleryCatalog catalog={customProducts} onThumbnailClick={null} />
+        {/* <h1 className="landingContentToggle">Your Vision</h1> */}
+        <h2 className="landingContentToggle">Your vision - Meticulously Captured In The Timeless Medium Of Paper</h2>
+        <GalleryCatalog
+          customClass={styles.landingGalleryCatalog}
+          catalog={customProducts}
+          onThumbnailClick={null}
+        />
         <div className="mainContent">
           <p>
             I specialize in creating bespoke, hand-crafted 3D laser-cut paper artworks tailored to
