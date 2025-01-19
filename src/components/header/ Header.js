@@ -37,7 +37,7 @@ function Header() {
         <li><NavLink to="/gallery" activeClassName="active" onClick={handleToggleMenu}>Gallery</NavLink></li>
         <li><NavLink to="/about" activeClassName="active" onClick={handleToggleMenu}>Process</NavLink></li>
         <li><NavLink to="/exhibition" activeClassName="active" onClick={handleToggleMenu}>Exhibition</NavLink></li>
-        <li><NavLink to="/custom" activeClassName="active" onClick={handleToggleMenu}>Custom Work</NavLink></li>
+        <li><NavLink to="/landingCustom" activeClassName="active" onClick={handleToggleMenu}>Custom Work</NavLink></li>
         <li><NavLink to="/contact" activeClassName="active" onClick={handleToggleMenu}>Contact</NavLink></li>
       </ul>
     </div>

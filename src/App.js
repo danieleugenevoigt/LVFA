@@ -13,6 +13,7 @@ import Footer from './components/footer/Footer';
 import Gallery from './components/gallery/Gallery';
 import About from './components/about/About';
 import Exhibition from './components/exhibition/Exhibition';
+import LandingCustom from './components/Custom Work/LandingCustom';
 import Custom from './components/Custom Work/Custom';
 import Contact from './components/contact/Contact';
 import PageNotFound from './components/page-not-found/PageNotFound';
@@ -27,6 +28,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
           <Route path="/exhibition" element={<Exhibition />} />
+          <Route path="/landingCustom" element={<LandingCustom />} />
           <Route path="/custom" element={<Custom />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<PageNotFound />} />
