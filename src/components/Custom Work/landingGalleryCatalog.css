@@ -35,7 +35,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 1rem;
+        margin-top: 0rem;
         padding: 0;
         width: 100%;
     }
@@ -44,17 +44,17 @@
         appearance: none;
         border: none;
         border-radius: .5rem;
-        height: 4rem;
+        height: 6rem;
         margin-bottom: .5rem;
         margin-left: .5rem;
-        width: 4rem;
+        width: 6rem;
     }
     
     .thumbnailButton img {
         border-radius: .5rem;
-        height: 4rem;
+        height: 6rem;
         margin-bottom: .5rem;
-        width: 4rem;
+        width: 6rem;
     }
 }
 
