@@ -1,14 +1,13 @@
 import React from 'react';
-import './galleryCatalog.css';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
+import styles from './galleryCatalog.module.css';
 
-function GalleryCatalog({ catalog, onThumbnailClick }) {
+function GalleryCatalog({ catalog, onThumbnailClick, customClass }) {
   return (
-    <div className="galleryContainer">
+    <div className={`${styles.galleryContainer} ${customClass || ''}`}>
       {catalog.map((product) => (
         <button
-          className="thumbnailButton"
+          className={styles.thumbnailButton}
           type="button"
           title={product.title}
           size={product.size}
@@ -39,6 +38,12 @@ GalleryCatalog.propTypes = {
     }),
   ).isRequired,
   onThumbnailClick: PropTypes.func.isRequired,
+  customClass: PropTypes.string, // New optional prop
+};
+
+// Default props to avoid ESLint warning
+GalleryCatalog.defaultProps = {
+  customClass: '',
 };
 
 export default GalleryCatalog;

@@ -1,7 +1,7 @@
 // import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import './landingCustom.css';
-import './landingCustomGallery.css';
+import customStyles from './landingCustomGallery.module.css';
 import GalleryCatalog from '../gallery-catalog/GalleryCatalog';
 // import ArtworkViewer from '../artwork-Viewer/ArtworkViewer';
 import customProducts from '../../database/customProducts';
@@ -31,7 +31,7 @@ function LandingCustom() {
         {/* <h1 className="landingContentToggle">Your Vision</h1> */}
         <h2 className="landingContentToggle">Your vision - Meticulously Captured In The Timeless Medium Of Paper</h2>
         <GalleryCatalog
-          customClass="landingCustomGallery"
+          customClass={`${customStyles.galleryContainer} ${customStyles.thumbnailButton} ${customStyles.thumbnailButtonImg}`}
           catalog={customProducts}
           onThumbnailClick={null}
         />
