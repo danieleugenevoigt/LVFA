@@ -1,19 +1,21 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React, { useState } from 'react';
+import propTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import './gallery.css';
 import ArtworkViewer from '../artwork-Viewer/ArtworkViewer';
 import GalleryCatalog from '../gallery-catalog/GalleryCatalog';
 import products from '../../database/products';
 
-function Gallery() {
+function Gallery({ customClass = '' }) {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const handleThumbnailClick = (product) => {
     setSelectedProduct(product);
   };
+
   return (
-    <div className="galleryPageContent">
+    <div className={`galleryPageContent ${customClass}`}>
       <Helmet>
         <title>Home - Lauren Voigt Fine Art</title>
         <meta name="description" content="Welcome to the Gallery page of Lauren Voigt Fine Art" />
@@ -34,5 +36,15 @@ function Gallery() {
     </div>
   );
 }
+
+// Prop validation
+Gallery.propTypes = {
+  customClass: propTypes.string,
+};
+
+// Define default props
+Gallery.defaultProps = {
+  customClass: '',
+};
 
 export default Gallery;
