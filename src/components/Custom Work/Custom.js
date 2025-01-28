@@ -1,16 +1,26 @@
 // Custom Page
-import React from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './custom.css';
+import customStyles from './customGallery.module.css';
+
 import ArtworkViewer from '../artwork-Viewer/ArtworkViewer';
+import GalleryCatalog from '../gallery-catalog/GalleryCatalog';
 import customProducts from '../../database/customProducts';
+import customProductDetails from '../../database/customProductDetail';
 
 function Custom() {
   const location = useLocation();
   const productName = location.state?.productName || customProducts[0]?.name;
   const initialProduct = customProducts.find((product) => product.name === productName)
   || customProducts[0];
+
+  const [selectedProduct, setSelectedProduct] = useState(initialProduct);
+
+  const handleThumbnailClick = (product) => {
+    setSelectedProduct(product);
+  };
 
   return (
     <div className="customWorkPageContent">
@@ -23,9 +33,15 @@ function Custom() {
         <meta property="og:url" content="https://laurenvoigtfineart.com/custom" />
       </Helmet>
 
-      <ArtworkViewer product={initialProduct} />
+      <ArtworkViewer product={selectedProduct} />
       <div className="customPageContentLayout">
         <p className="contentToggle">The finished artwork, original photograph and detail image.</p>
+        <GalleryCatalog
+          catalog={customProductDetails}
+          onThumbnailClick={handleThumbnailClick}
+          styles={customStyles}
+        />
+        {' '}
         <div>
           <p>
             Collaborate with me to bring your artistic dreams to life

@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
 import './landingCustom.css';
-import customStyles from './landingCustomGallery.module.css';
+import landingGalleryStyles from './landingCustomGallery.module.css';
 import GalleryCatalog from '../gallery-catalog/GalleryCatalog';
 import customProducts from '../../database/customProducts';
 
@@ -29,11 +29,13 @@ function LandingCustom() {
         <h2 className="landingContentToggle">
           Your vision - Meticulously Captured In The Timeless Medium Of Paper
         </h2>
+
         <GalleryCatalog
-          customClass={`${customStyles.galleryContainer} ${customStyles.thumbnailButton} ${customStyles.thumbnailButtonImg}`}
           catalog={customProducts}
           onThumbnailClick={handleThumbnailClick}
+          styles={landingGalleryStyles}
         />
+
         <div className="mainContent">
           <p>
             I specialize in bespoke, hand-crafted 3D laser-cut paper artworks tailored to

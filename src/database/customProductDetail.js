@@ -25,15 +25,6 @@ const product3 = {
   price: 'Unavailable',
 };
 
-const product4 = {
-  title: 'Nanny',
-  size: '12" by 12" ',
-  imageArray: ['/images/custom/Nanny/custom-1.webp', '/images/custom/Nanny/custom-1.webp'],
-  description: 'Mixed Media',
-  status: 'Sold',
-  price: 'Unavailable',
-};
-
-const productList = [product1, product2, product3, product4];
+const productList = [product1, product2, product3];
 
 export default productList;

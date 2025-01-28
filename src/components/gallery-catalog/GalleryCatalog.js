@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './galleryCatalog.module.css';
 
-function GalleryCatalog({ catalog, onThumbnailClick, customClass }) {
+function GalleryCatalog({ catalog, onThumbnailClick, styles }) {
   return (
-    <div className={`${styles.galleryContainer} ${customClass || ''}`}>
+    <div className={styles.galleryContainer}>
       {catalog.map((product) => (
         <button
           className={styles.thumbnailButton}
@@ -38,12 +37,12 @@ GalleryCatalog.propTypes = {
     }),
   ).isRequired,
   onThumbnailClick: PropTypes.func.isRequired,
-  customClass: PropTypes.string, // New optional prop
+  styles: PropTypes.string, // New optional prop
 };
 
 // Default props to avoid ESLint warning
 GalleryCatalog.defaultProps = {
-  customClass: '',
+  styles: '',
 };
 
 export default GalleryCatalog;

@@ -1,7 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
-import styles from './gallery.module.css';
+import galleryStyles from './gallery.module.css';
+import galleryCatalogStyles from '../gallery-catalog/galleryCatalog.module.css';
 import ArtworkViewer from '../artwork-Viewer/ArtworkViewer';
 import GalleryCatalog from '../gallery-catalog/GalleryCatalog';
 import products from '../../database/products';
@@ -14,7 +15,7 @@ function Gallery() {
   };
 
   return (
-    <div className={styles.galleryPageContent}>
+    <div className={galleryStyles.galleryPageContent}>
       <Helmet>
         <title>Home - Lauren Voigt Fine Art</title>
         <meta name="description" content="Welcome to the Gallery page of Lauren Voigt Fine Art" />
@@ -31,7 +32,11 @@ function Gallery() {
         <link rel="canonical" href="https://laurenvoigtfineart.com/" />
       </Helmet>
       <ArtworkViewer product={selectedProduct || products[0]} />
-      <GalleryCatalog catalog={products} onThumbnailClick={handleThumbnailClick} />
+      <GalleryCatalog
+        catalog={products}
+        onThumbnailClick={handleThumbnailClick}
+        styles={galleryCatalogStyles}
+      />
     </div>
   );
 }
