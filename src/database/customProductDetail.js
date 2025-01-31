@@ -5,6 +5,7 @@ const product1 = {
   description: 'Mixed Media',
   status: 'Sold',
   price: 'Unavailable',
+  hoverEnabled: false,
 };
 
 const product2 = {
@@ -14,6 +15,7 @@ const product2 = {
   description: 'Mixed Media',
   status: 'Sold',
   price: 'Unavailable',
+  hoverEnabled: true, // Hover effect enabled
 };
 
 const product3 = {
@@ -23,6 +25,7 @@ const product3 = {
   description: 'Mixed Media',
   status: 'Sold',
   price: 'Unavailable',
+  hoverEnabled: true, // Hover effect enabled
 };
 
 const productList = [product1, product2, product3];
