@@ -27,7 +27,7 @@ function LandingCustom() {
 
       <div className="landingCustomPageContentLayout">
         <h2 className="landingContentToggle">
-          Your vision - Meticulously Captured In The Timeless Medium Of Paper
+          Your photographs - Meticulously Captured In The Timeless Medium Of Paper
         </h2>
 
         <GalleryCatalog
@@ -38,9 +38,9 @@ function LandingCustom() {
 
         <div className="mainContent">
           <p>
-            I specialize in bespoke, hand-crafted 3D laser-cut paper artworks tailored to
-            your unique vision. My intricate designs and meticulous craftsmanship transform
-            memories into stunning visual masterpieces.
+            I specialize in custom hand-crafted 3D laser-cut paper artworks tailored to your unique
+            photos. My intricate designs and meticulous craftsmanship transform memories into
+            stunning visual masterpieces.
           </p>
         </div>
       </div>

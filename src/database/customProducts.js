@@ -5,6 +5,8 @@ const product1 = {
   description: 'Mixed Media',
   status: 'Sold',
   price: 'Unavailable',
+  name: 'Nanny',
+  folder: 'Nanny',
 };
 
 const product2 = {

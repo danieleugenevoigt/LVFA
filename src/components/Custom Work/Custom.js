@@ -8,7 +8,7 @@ import customStyles from './customGallery.module.css';
 import ArtworkViewer from '../artwork-Viewer/ArtworkViewer';
 import GalleryCatalog from '../gallery-catalog/GalleryCatalog';
 import customProducts from '../../database/customProducts';
-import customProductDetails from '../../database/customProductDetail';
+import customProductDetail from '../../database/customProductDetail';
 
 function Custom() {
   const location = useLocation();
@@ -35,9 +35,9 @@ function Custom() {
 
       <ArtworkViewer product={selectedProduct} />
       <div className="customPageContentLayout">
-        <p className="contentToggle">The finished artwork, original photograph and detail image.</p>
+        <p>finished artwork, original photograph, detail image</p>
         <GalleryCatalog
-          catalog={customProductDetails}
+          catalog={customProductDetail}
           onThumbnailClick={handleThumbnailClick}
           styles={customStyles}
         />

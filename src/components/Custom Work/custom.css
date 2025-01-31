@@ -42,7 +42,9 @@ div .galleryContainer {
 
 @media (max-width: 1024px) {
 p {
+    font-size: 1rem;
     padding-top: 1rem;
+    text-align: center;
 }
 div .galleryContainer {
     margin-right: auto;

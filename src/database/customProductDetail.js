@@ -8,18 +8,18 @@ const product1 = {
 };
 
 const product2 = {
-  title: 'Nanny',
+  title: 'Original-1',
   size: '12" by 12" ',
-  imageArray: ['/images/custom/Nanny/custom-1.webp', '/images/custom/Nanny/custom-1.webp'],
+  imageArray: ['/images/custom/Nanny/original-1.webp', '/images/custom/Nanny/original-1.webp'],
   description: 'Mixed Media',
   status: 'Sold',
   price: 'Unavailable',
 };
 
 const product3 = {
-  title: 'Nanny',
+  title: 'Detail-1',
   size: '12" by 12" ',
-  imageArray: ['/images/custom/Nanny/custom-1.webp', '/images/custom/Nanny/custom-1.webp'],
+  imageArray: ['/images/custom/Nanny/detail-1.webp', '/images/custom/Nanny/detail-1.webp'],
   description: 'Mixed Media',
   status: 'Sold',
   price: 'Unavailable',
