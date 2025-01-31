@@ -1,5 +1,5 @@
 // Custom Page
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './custom.css';
@@ -18,9 +18,14 @@ function Custom() {
 
   const [selectedProduct, setSelectedProduct] = useState(initialProduct);
 
-  const handleThumbnailClick = (product) => {
-    setSelectedProduct(product);
-  };
+  useEffect(() => {
+    // Set initial state when the component mounts
+    setSelectedProduct(initialProduct);
+  }, [initialProduct]);
+
+  // const handleThumbnailClick = (product) => {
+  //   setSelectedProduct(product);
+  // };
 
   return (
     <div className="customWorkPageContent">
@@ -35,10 +40,10 @@ function Custom() {
 
       <ArtworkViewer product={selectedProduct} />
       <div className="customPageContentLayout">
-        <p>finished artwork, original photograph, detail image</p>
+        <p>finished artwork, detail image, original photograph</p>
         <GalleryCatalog
           catalog={customProductDetail}
-          onThumbnailClick={handleThumbnailClick}
+          onThumbnailClick={() => {}}
           styles={customStyles}
         />
         {' '}
