@@ -7,9 +7,13 @@ h2 {
     font-size: 1.25rem;
 }
 
+.link {
+    color: var(--link-color);
+}
+
 p {
     font-size: 2rem;
-    padding-bottom: 0rem;
+    padding-bottom: 2rem;
     padding-top: 2rem;
     text-align: left;
 }
@@ -43,8 +47,8 @@ div .galleryContainer {
 @media (max-width: 1024px) {
 p {
     font-size: 1rem;
-    margin-bottom: 1rem;
-    padding-top: 1rem;
+    margin-bottom: .5rem;
+    padding: 0rem;
     text-align: center;
 }
 div .galleryContainer {

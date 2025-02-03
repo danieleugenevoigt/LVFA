@@ -36,9 +36,9 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
         margin-top: 2rem;
-        height: 30vh;
+        height: auto;
         padding: 0;
         width: 100%;
     }
@@ -47,17 +47,17 @@
         appearance: none;
         border: none;
         border-radius: .5rem;
-        height: 6rem;
+        height: 8rem;
         margin-bottom: .5rem;
         margin-left: .5rem;
-        width: 6rem;
+        width: 8rem;
     }
     
     .thumbnailButton img {
         border-radius: .5rem;
-        height: 6rem;
+        height: 8rem;
         margin-bottom: .5rem;
-        width: 6rem;
+        width: 8rem;
     }
 }
 

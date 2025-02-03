@@ -1,6 +1,6 @@
 // Custom Page
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './custom.css';
 import customStyles from './customGallery.module.css';
@@ -52,6 +52,7 @@ function Custom() {
             Collaborate with me to bring your artistic dreams to life
             through the timeless, delicate beauty of paper art.
           </p>
+          <NavLink to="/faq" activeClassName="active" className="link">Frequently Asked Questions</NavLink>
         </div>
       </div>
     </div>
