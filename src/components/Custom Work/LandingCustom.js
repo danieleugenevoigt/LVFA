@@ -29,7 +29,7 @@ function LandingCustom() {
         <h2 className="landingContentToggle">
           Your photographs - Meticulously Captured In The Timeless Medium Of Paper
         </h2>
-
+        <p>select one of the images below for details</p>
         <GalleryCatalog
           catalog={customProducts}
           onThumbnailClick={handleThumbnailClick}

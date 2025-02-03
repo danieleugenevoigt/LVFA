@@ -1,6 +1,6 @@
 
  .galleryContainer {
-    align-content:center;
+    align-content:flex-center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
