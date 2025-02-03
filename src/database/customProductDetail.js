@@ -1,14 +1,4 @@
 const product1 = {
-  title: 'Nanny',
-  size: '12" by 12" ',
-  imageArray: ['/images/custom/Nanny/custom-1.webp', '/images/custom/Nanny/custom-1.webp'],
-  description: 'Mixed Media',
-  status: 'Sold',
-  price: 'Unavailable',
-  hoverEnabled: false,
-};
-
-const product2 = {
   title: 'Detail-1',
   size: '12" by 12" ',
   imageArray: ['/images/custom/Nanny/detail-1.webp', '/images/custom/Nanny/detail-1.webp'],
@@ -18,7 +8,7 @@ const product2 = {
   hoverEnabled: true, // Hover effect enabled
 };
 
-const product3 = {
+const product2 = {
   title: 'Original-1',
   size: '12" by 12" ',
   imageArray: ['/images/custom/Nanny/original-1.webp', '/images/custom/Nanny/original-1.webp'],
@@ -28,6 +18,6 @@ const product3 = {
   hoverEnabled: true, // Hover effect enabled
 };
 
-const productList = [product1, product2, product3];
+const productList = [product1, product2];
 
 export default productList;

@@ -40,7 +40,7 @@ function Custom() {
 
       <ArtworkViewer product={selectedProduct} />
       <div className="customPageContentLayout">
-        <p>finished artwork, detail image, original photograph</p>
+        <p>detail image and original photograph</p>
         <GalleryCatalog
           catalog={customProductDetail}
           onThumbnailClick={() => {}}

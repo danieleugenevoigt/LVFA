@@ -28,7 +28,7 @@ div .mainContent  {
     margin-left: auto;
     margin-right: auto;
     padding-left: 0rem;
-    align-items: left;
+    align-items: center;
     justify-content: flex-start;
     width: 100%;
 }

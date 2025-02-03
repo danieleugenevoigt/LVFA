@@ -9,7 +9,7 @@ h2 {
 
 p {
     font-size: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
     padding-top: 2rem;
     text-align: left;
 }
@@ -43,6 +43,7 @@ div .galleryContainer {
 @media (max-width: 1024px) {
 p {
     font-size: 1rem;
+    margin-bottom: 1rem;
     padding-top: 1rem;
     text-align: center;
 }
