@@ -1,3 +1,8 @@
+.link {
+    color: var(--link-color);
+    font-size: 1.5rem;
+}
+
 .landingCustomPageContentLayout h1 {
     font-size: 3rem;
     padding-top: 1.5rem;
@@ -41,6 +46,12 @@ div .mainContent  {
     justify-content: flex-start;
     height: 100vh;
     width: 80%;
+}
+
+.mailToLink {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
 }
 
 @media (max-width: 1024px) {

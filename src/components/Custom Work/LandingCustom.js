@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import './landingCustom.css';
 import landingGalleryStyles from './landingCustomGallery.module.css';
 import GalleryCatalog from '../gallery-catalog/GalleryCatalog';
@@ -39,9 +39,19 @@ function LandingCustom() {
         <div className="mainContent">
           <p>
             I specialize in custom hand-crafted 3D laser-cut paper artworks tailored to your unique
-            photos. My intricate designs and meticulous craftsmanship transform memories into
+            photos. My intricate designs transform memories into
             stunning visual masterpieces.
           </p>
+          <div className="mainContentLinks">
+            <NavLink to="/faq" activeClassName="active" className="link">Frequently Asked Questions</NavLink>
+            <a
+              className="mailToLink"
+              href="mailto:contact@laurenvoigtfineart.com"
+              aria-label="Email contact@laurenvoigtfineart.com"
+            >
+              contact@laurenvoigtfineart.com
+            </a>
+          </div>
         </div>
       </div>
     </div>
