@@ -16,6 +16,7 @@ import Exhibition from './components/exhibition/Exhibition';
 import LandingCustom from './components/Custom Work/LandingCustom';
 import Custom from './components/Custom Work/Custom';
 import Contact from './components/contact/Contact';
+import Faq from './components/frequently asked questions/Faq';
 import PageNotFound from './components/page-not-found/PageNotFound';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/landingCustom" element={<LandingCustom />} />
           <Route path="/custom" element={<Custom />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/faq" element={<Faq />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />

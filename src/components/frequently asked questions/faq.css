@@ -1,0 +1,29 @@
+.faqMainContent {
+    align-items: left;
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 1; /* Ensures the content expands to fill the available space */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0rem;
+    min-height: 100vh;
+    width: 70vw;
+}
+
+.faqText {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: left;
+}
+
+.faqTitle {
+    font-size: 3rem;
+    padding-top: 1.5rem;
+}
+
+.faqQuestion {
+    color: rgb(148, 243, 5);
+    font-size: 1.75rem;
+    padding-bottom: 2rem;
+}
