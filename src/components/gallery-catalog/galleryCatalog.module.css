@@ -58,6 +58,36 @@
     }
 }
 
+@media (max-width: 400px) {
+    .galleryContainer {
+        align-content:flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem;
+        padding: 0;
+        width: 100%;
+    }
+
+    .thumbnailButton {
+        appearance: none;
+        border: none;
+        border-radius: .5rem;
+        height: 2.8rem;
+        margin-bottom: .5rem;
+        margin-left: .5rem;
+        width: 2.8rem;
+    }
+    
+    .thumbnailButton img {
+        border-radius: .5rem;
+        height: 2.8rem;
+        margin-bottom: .5rem;
+        width: 2.8rem;
+    }
+}
+
 @media only screen 
   and (min-device-width: 1368px) 
   and (max-device-width: 1824px) 

@@ -47,19 +47,52 @@
         appearance: none;
         border: none;
         border-radius: .5rem;
-        height: 8rem;
+        height: 7.5rem;
         margin-bottom: .5rem;
         margin-left: .5rem;
-        width: 8rem;
+        width: 7.5rem;
     }
     
     .thumbnailButton img {
         border-radius: .5rem;
-        height: 8rem;
+        height: 7.5rem;
         margin-bottom: .5rem;
-        width: 8rem;
+        width: 7.5rem;
     }
 }
+
+@media (max-width: 400px) {
+    .galleryContainer {
+        align-content:flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        height: auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    .thumbnailButton {
+        appearance: none;
+        border: none;
+        border-radius: .5rem;
+        height: 6rem;
+        margin-bottom: .5rem;
+        margin-left: .5rem;
+        width: 6rem;
+    }
+    
+    .thumbnailButton img {
+        border-radius: .5rem;
+        height: 6.5rem;
+        margin-bottom: .5rem;
+        width: 6.5rem;
+    }
+}
+
 
 @media only screen 
   and (min-device-width: 1368px) 

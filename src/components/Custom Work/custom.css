@@ -41,6 +41,7 @@ div .galleryContainer {
 }
 
 @media (max-width: 1024px) {
+
 p {
     font-size: 1rem;
     margin-bottom: .5rem;
@@ -69,5 +70,11 @@ div .galleryContainer {
     flex-direction: column;
     height: auto;
     width: 100vw;
+}
+.mainContentLinks a {
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    text-align: center;
 }
 }

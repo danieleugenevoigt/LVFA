@@ -188,4 +188,32 @@ div .slider {
     margin-left: 0;
     min-width: 0;
 }
+
+}
+
+@media (max-width: 400px) {
+    .imageInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: .5rem;
+        margin-left: auto;
+        margin-top: .5rem;
+    }
+    
+    .slider {
+        margin-bottom: 1rem;
+    }
+    .title-left {
+        font-size: .8rem;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 0;
+    }
+    
+    .title-right {
+        font-size: .8rem;
+        margin-left: 0;
+        min-width: 0;
+    }
 }
