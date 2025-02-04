@@ -1,3 +1,8 @@
+a {
+    color: var(--link-color);
+    font-size: 1.5rem;
+}
+
 .link {
     color: var(--link-color);
     font-size: 1.5rem;
@@ -48,10 +53,10 @@ div .mainContent  {
     width: 80%;
 }
 
-.mailToLink {
+.mainContentLinks {
     display: flex;
     flex-direction: row;
-    align-content: space-between;
+    justify-content: space-between;
 }
 
 @media (max-width: 1024px) {
@@ -87,5 +92,10 @@ div .galleryContainer {
     line-height: 1;
     padding-top: .5rem;
     text-align: center;
+}
+.mainContentLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 }
