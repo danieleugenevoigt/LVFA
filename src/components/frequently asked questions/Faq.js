@@ -36,7 +36,9 @@ function Faq() {
           - First, look at the custom portraiture samples on my website and fall in love with
           the style of art.
           <br />
-          - Contact me through the link or email me at contact@laurenvoigtfineart.com
+          - Email me at
+          <a href="mailto:contact@laurenvoigtfineart.com"> contact@laurenvoigtfineart.com </a>
+          to start the conversation.
           <br />
           - Once we have determined to move forward in the process I will send the commission
           contract for you to sign.
