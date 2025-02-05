@@ -45,10 +45,11 @@ function LandingCustom() {
           <div className="mainContentLinks">
             <NavLink to="/faq" activeClassName="active" className="link">Frequently Asked Questions</NavLink>
             <a
+              className="link"
               href="mailto:contact@laurenvoigtfineart.com"
               aria-label="Email contact@laurenvoigtfineart.com"
             >
-              contact@laurenvoigtfineart.com
+              contact me
             </a>
           </div>
         </div>
