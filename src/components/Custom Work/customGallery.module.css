@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     height: 100%;
     justify-content: left;
+    padding-bottom: 1rem;
     padding-left: 0rem;
     height: auto;
     width: auto;
@@ -39,7 +40,6 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin-top: 0rem;
-        padding: 0;
         width: 100%;
     }
 
