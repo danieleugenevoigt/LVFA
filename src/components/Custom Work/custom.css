@@ -49,8 +49,9 @@ div .galleryContainer {
     padding-left: .5rem;
     align-items: flex-start;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
 }
+
 
 @media (max-width: 1024px) {
 
@@ -76,6 +77,14 @@ div .galleryContainer {
     justify-content: flex-start;
     width: 70%;
 }
+
+.customPageContentLayout p {
+    font-size: 1.25rem;
+    padding-bottom: 2rem;
+    padding-top: 0rem;
+    text-align: left;
+}
+
 .customWorkPageContent {
     align-items: center;
     display: flex;

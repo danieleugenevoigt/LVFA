@@ -31,6 +31,27 @@
     width: auto;
 }
 
+@media (max-width: 1750px){
+    .thumbnailButton {
+        appearance: none;
+        border: none;
+        border-radius: .5rem;
+        height: 30vh;
+        margin-bottom: .5rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        width: auto;
+    }
+    
+    .thumbnailButton img {
+        border-radius: .5rem;
+        height: 30vh;
+        margin-bottom: .5rem;
+    
+        width: auto;
+    }
+}
+
 /* Phone Media Query */
 @media (max-width: 1024px) {
     .galleryContainer {
@@ -38,7 +59,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
         margin-top: 0rem;
         width: 100%;
     }
@@ -47,17 +68,17 @@
         appearance: none;
         border: none;
         border-radius: .5rem;
-        height: 7.5rem;
-        margin-bottom: .5rem;
+        height: 8rem;
+        margin-bottom: 1rem;
         margin-left: .5rem;
-        width: 7.5rem;
+        width: 8rem;
     }
     
     .thumbnailButton img {
         border-radius: .5rem;
-        height: 7.5rem;
-        margin-bottom: .5rem;
-        width: 7.5rem;
+        height: 10rem;
+        margin-bottom: 1rem;
+        width: 10rem;
     }
 }
 
@@ -70,4 +91,5 @@
     .galleryContainer {
         margin-top: 2.5rem;
     }
+    
 }
