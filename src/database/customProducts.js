@@ -10,12 +10,14 @@ const product1 = {
 };
 
 const product2 = {
-  title: 'Nanny',
+  title: 'AJ',
   size: '12" by 12" ',
-  imageArray: ['/images/custom/Nanny/custom-1.webp', '/images/custom/Nanny/custom-1.webp'],
+  imageArray: ['/images/custom/AJ/AJ.webp', '/images/custom/AJ/AJ.webp'],
   description: 'Mixed Media',
   status: 'Sold',
   price: 'Unavailable',
+  name: 'AJ',
+  folder: 'AJ',
 };
 
 const product3 = {
