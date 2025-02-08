@@ -21,18 +21,18 @@ const product2 = {
 };
 
 const product3 = {
-  title: 'Nanny',
+  title: 'Izzy',
   size: '12" by 12" ',
-  imageArray: ['/images/custom/Nanny/custom-1.webp', '/images/custom/Nanny/custom-1.webp'],
+  imageArray: ['/images/custom/Izzy/Izzy-1.webp', '/images/custom/Izzy/Izzy-1.webp'],
   description: 'Mixed Media',
   status: 'Sold',
   price: 'Unavailable',
 };
 
 const product4 = {
-  title: 'Nanny',
+  title: 'Bella',
   size: '12" by 12" ',
-  imageArray: ['/images/custom/Nanny/custom-1.webp', '/images/custom/Nanny/custom-1.webp'],
+  imageArray: ['/images/custom/Bella/Bella-1.webp', '/images/Bella/Bella/custom-1.webp'],
   description: 'Mixed Media',
   status: 'Sold',
   price: 'Unavailable',

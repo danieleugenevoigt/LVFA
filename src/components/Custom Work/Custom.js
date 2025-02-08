@@ -4,11 +4,9 @@ import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './custom.css';
 import customStyles from './customGallery.module.css';
-
 import ArtworkViewer from '../artwork-Viewer/ArtworkViewer';
 import GalleryCatalog from '../gallery-catalog/GalleryCatalog';
 import customProducts from '../../database/customProducts';
-import customProductDetail from '../../database/customProductDetail';
 
 function Custom() {
   const location = useLocation();
@@ -17,15 +15,19 @@ function Custom() {
   || customProducts[0];
 
   const [selectedProduct, setSelectedProduct] = useState(initialProduct);
+  const [customCatalog, setCustomCatalog] = useState(null);
 
   useEffect(() => {
     // Set initial state when the component mounts
     setSelectedProduct(initialProduct);
-  }, [initialProduct]);
-
-  // const handleThumbnailClick = (product) => {
-  //   setSelectedProduct(product);
-  // };
+    // Dynamically import the correct customProductDetail file
+    import(`../../database/${productName}/customProductDetail.js`)
+      .then((module) => setCustomCatalog(module.default))
+      .catch((error) => {
+        console.error(`Failed to load catalog for ${productName}:`, error);
+        setCustomCatalog(null); // Fallback to null or a default catalog if needed
+      });
+  }, [initialProduct, productName]);
 
   return (
     <div className="customWorkPageContent">
@@ -44,12 +46,16 @@ function Custom() {
           <p>detail image</p>
           <p>original image</p>
         </div>
-        <GalleryCatalog
-          catalog={customProductDetail}
-          onThumbnailClick={() => {}}
-          styles={customStyles}
-        />
-        {' '}
+        {/* Only render GalleryCatalog if customCatalog is successfully loaded */}
+        {customCatalog ? (
+          <GalleryCatalog
+            catalog={customCatalog}
+            onThumbnailClick={() => {}}
+            styles={customStyles}
+          />
+        ) : (
+          <p>Loading catalog...</p>
+        )}
         <div>
           <p>
             Collaborate with me to bring your artistic dreams to life
