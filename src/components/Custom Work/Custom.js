@@ -1,6 +1,6 @@
 // Custom Page
-import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { React, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './custom.css';
 import customStyles from './customGallery.module.css';
@@ -26,7 +26,27 @@ function Custom() {
   const initialProduct = customProducts.find((product) => product.name === productName)
     || customProducts[0];
 
-  const selectedCatalog = allGalleries[productName] || null;
+  const [currentProduct, setCurrentProduct] = useState(initialProduct);
+  const selectedCatalog = allGalleries[currentProduct.name] || null;
+  const navigate = useNavigate();
+
+  // Function to handle "Next" button click
+  const handleNext = () => {
+    const currentIndex = customProducts.findIndex(
+      (product) => product.name === currentProduct.name,
+    );
+    const nextIndex = (currentIndex + 1) % customProducts.length; // Cycle to the next product
+    setCurrentProduct(customProducts[nextIndex]);
+  };
+
+  // Function to handle "Last" button click
+  const handleLast = () => {
+    const currentIndex = customProducts.findIndex(
+      (product) => product.name === currentProduct.name,
+    );
+    const lastIndex = (currentIndex - 1) % customProducts.length; // Cycle to the last product
+    setCurrentProduct(customProducts[lastIndex]);
+  };
 
   return (
     <div className="customWorkPageContent">
@@ -39,7 +59,7 @@ function Custom() {
         <meta property="og:url" content="https://laurenvoigtfineart.com/custom" />
       </Helmet>
 
-      <ArtworkViewer product={initialProduct} />
+      <ArtworkViewer product={currentProduct} />
       <div className="customPageContentLayout">
         <div className="customGalleryTextLayout">
           <p>detail image</p>
@@ -60,6 +80,23 @@ function Custom() {
             Collaborate with me to bring your artistic dreams to life
             through the timeless, delicate beauty of paper art.
           </p>
+        </div>
+        <div className="button-container">
+          <button type="button" className="contact-button" onClick={handleLast}>
+            <span className="material-symbols-outlined">
+              chevron_left
+            </span>
+          </button>
+          <button type="button" className="contact-button" onClick={() => navigate('/landingCustom')}>
+            <span className="material-symbols-outlined">
+              undo
+            </span>
+          </button>
+          <button type="button" className="contact-button" onClick={handleNext}>
+            <span className="material-symbols-outlined">
+              chevron_right
+            </span>
+          </button>
         </div>
       </div>
     </div>
