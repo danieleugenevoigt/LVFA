@@ -1,5 +1,5 @@
 // Custom Page
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './custom.css';
@@ -8,26 +8,25 @@ import ArtworkViewer from '../artwork-Viewer/ArtworkViewer';
 import GalleryCatalog from '../gallery-catalog/GalleryCatalog';
 import customProducts from '../../database/customProducts';
 
+// Import all galleries statically
+import galleryA from '../../database/Nanny/customProductDetail';
+import galleryB from '../../database/AJ/customProductDetail';
+import galleryC from '../../database/Izzy/customProductDetail';
+
+// Map product names to their corresponding gallery data
+const allGalleries = {
+  Nanny: galleryA,
+  AJ: galleryB,
+  Izzy: galleryC,
+};
+
 function Custom() {
   const location = useLocation();
   const productName = location.state?.productName || customProducts[0]?.name;
   const initialProduct = customProducts.find((product) => product.name === productName)
-  || customProducts[0];
+    || customProducts[0];
 
-  const [selectedProduct, setSelectedProduct] = useState(initialProduct);
-  const [customCatalog, setCustomCatalog] = useState(null);
-
-  useEffect(() => {
-    // Set initial state when the component mounts
-    setSelectedProduct(initialProduct);
-    // Dynamically import the correct customProductDetail file
-    import(`../../database/${productName}/customProductDetail.js`)
-      .then((module) => setCustomCatalog(module.default))
-      .catch((error) => {
-        console.error(`Failed to load catalog for ${productName}:`, error);
-        setCustomCatalog(null); // Fallback to null or a default catalog if needed
-      });
-  }, [initialProduct, productName]);
+  const selectedCatalog = allGalleries[productName] || null;
 
   return (
     <div className="customWorkPageContent">
@@ -40,21 +39,21 @@ function Custom() {
         <meta property="og:url" content="https://laurenvoigtfineart.com/custom" />
       </Helmet>
 
-      <ArtworkViewer product={selectedProduct} />
+      <ArtworkViewer product={initialProduct} />
       <div className="customPageContentLayout">
         <div className="customGalleryTextLayout">
           <p>detail image</p>
           <p>original image</p>
         </div>
-        {/* Only render GalleryCatalog if customCatalog is successfully loaded */}
-        {customCatalog ? (
+        {/* Render GalleryCatalog only if the catalog exists */}
+        {selectedCatalog ? (
           <GalleryCatalog
-            catalog={customCatalog}
+            catalog={selectedCatalog}
             onThumbnailClick={() => {}}
             styles={customStyles}
           />
         ) : (
-          <p>Loading catalog...</p>
+          <p>No gallery available for this product.</p>
         )}
         <div>
           <p>
