@@ -32,7 +32,7 @@ const product3 = {
 };
 
 const product4 = {
-  title: 'Bella',
+  title: 'New Work Coming Soon!',
   size: '12" by 12" ',
   imageArray: ['/images/custom/Bella/Bella-1.webp', '/images/Bella/Bella/custom-1.webp'],
   description: 'Mixed Media',
