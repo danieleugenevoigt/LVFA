@@ -44,7 +44,8 @@ function Custom() {
     const currentIndex = customProducts.findIndex(
       (product) => product.name === currentProduct.name,
     );
-    const lastIndex = (currentIndex - 1) % customProducts.length; // Cycle to the last product
+    const lastIndex = (currentIndex - 1 + customProducts.length)
+    % customProducts.length; // Ensure positive index
     setCurrentProduct(customProducts[lastIndex]);
   };
 
@@ -61,10 +62,6 @@ function Custom() {
 
       <ArtworkViewer product={currentProduct} />
       <div className="customPageContentLayout">
-        <div className="customGalleryTextLayout">
-          <p>detail image</p>
-          <p>original image</p>
-        </div>
         {/* Render GalleryCatalog only if the catalog exists */}
         {selectedCatalog ? (
           <GalleryCatalog
@@ -75,6 +72,10 @@ function Custom() {
         ) : (
           <p>No gallery available for this product.</p>
         )}
+        <div className="customGalleryTextLayout">
+          <p>detail image</p>
+          <p>original image</p>
+        </div>
         <div>
           <p>
             Collaborate with me to bring your artistic dreams to life

@@ -44,9 +44,13 @@ div .galleryContainer {
 
 .customPageContentLayout p {
     font-size: 2rem;
-    padding-bottom: 2rem;
-    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-top: 4rem;
     text-align: left;
+}
+
+.customPageContentLayout .customGalleryTextLayout p {
+    padding-top: 0rem;
 }
 
 .customWorkPageContent {
@@ -63,7 +67,6 @@ div .galleryContainer {
 .customGalleryTextLayout {
     display: flex;
     flex-direction: row;
-    
     margin-right: auto;
     padding-left: .5rem;
     align-items: flex-start;
@@ -133,6 +136,17 @@ div .galleryContainer {
     height: auto;
     width: 100vw;
 }
+
+.customGalleryTextLayout {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    padding-left: .5rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+}
+
 .mainContentLinks a {
     font-size: 1.25rem;
     margin-bottom: .5rem;

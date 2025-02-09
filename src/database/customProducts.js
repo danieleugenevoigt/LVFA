@@ -31,17 +31,17 @@ const product3 = {
   folder: 'Izzy',
 };
 
-const product4 = {
-  title: 'New Work Coming Soon!',
-  size: '12" by 12" ',
-  imageArray: ['/images/custom/Bella/Bella-1.webp', '/images/Bella/Bella/custom-1.webp'],
-  description: 'Mixed Media',
-  status: 'Sold',
-  price: 'Unavailable',
-  name: 'Bella',
-  folder: 'Bella',
-};
+// const product4 = {
+//   title: 'New Work Coming Soon!',
+//   size: '12" by 12" ',
+//   imageArray: ['/images/custom/Bella/Bella-1.webp', '/images/Bella/Bella/custom-1.webp'],
+//   description: 'Mixed Media',
+//   status: 'Sold',
+//   price: 'Unavailable',
+//   name: 'Bella',
+//   folder: 'Bella',
+// };
 
-const productList = [product1, product2, product3, product4];
+const productList = [product1, product2, product3];
 
 export default productList;

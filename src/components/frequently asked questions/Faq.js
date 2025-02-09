@@ -47,7 +47,7 @@ function Faq() {
           Payments are split into three increments. You and I will
           work collaboratively through the whole process to ensure your satisfaction from
           determining the best photo to the final creation of your one of a kind piece of art.
-          The artwork will then be shipped to your choice location. Shipping is already included
+          The artwork will then be shipped to your choice of location. Shipping is already included
           in the price.
           <br />
           <br />
