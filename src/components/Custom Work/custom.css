@@ -133,7 +133,7 @@ div .galleryContainer {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -143,7 +143,7 @@ div .galleryContainer {
     margin-right: auto;
     padding-left: .5rem;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 90%;
 }
 
@@ -155,6 +155,15 @@ div .galleryContainer {
 }
 }
 
+@media (max-width: 860px) {
+    .customWorkPageContent {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+}
 
 @media (max-width: 380px) {
 p {

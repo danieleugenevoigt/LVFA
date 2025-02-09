@@ -69,6 +69,50 @@
   margin-bottom: 1rem;
 }
 
+@media (max-width: 1024px) {
+  .headerMain h1 {
+    font-size: 2rem;
+  }
+
+  .headerMain {
+    min-height: 10vh;
+  }
+
+  .navMenu {
+    display: none; /* Hide the menu items by default */
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* Adjust top position as needed */
+    left: 0;
+    background-color: var(--primary-gradient-color); /* Match header background */
+    width: 100vw;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add box shadow */
+    z-index: 1000; /* Ensure menu appears above content */
+  }
+
+  /* Show the menu when 'open' class is present */
+  .navMenu.open {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navMenu li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .navToggle {
+    display: inline-block; /* Hide by default */
+    cursor: pointer;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+  }
+}
+
 @media (max-width: 768px)
    and (max-height: 1024px){
     
@@ -79,6 +123,14 @@
   .navMenu {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .navToggle {
+    display: inline-block; /* Hide by default */
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
   }
 }
 
