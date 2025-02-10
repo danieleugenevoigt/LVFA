@@ -24,7 +24,7 @@ div .galleryContainer {
 }
 
 .button-container {
-    display: flex;
+    display: flex ! important;
     flex-direction: row;
     justify-content: space-evenly;
     margin-left: 1rem;
@@ -97,7 +97,7 @@ p {
 }
 
 .button-container {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 2rem;
