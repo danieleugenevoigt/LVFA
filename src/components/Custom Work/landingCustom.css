@@ -58,7 +58,7 @@ div .mainContent  {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 1.5rem;
+    margin-top: 0rem;
 }
 
 @media (max-width: 1024px) {
