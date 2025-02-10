@@ -29,6 +29,9 @@ function LandingCustom() {
         <h2 className="landingContentToggle">
           Your photographs - Meticulously Captured In The Timeless Medium Of Paper
         </h2>
+        <div className="mainContentLinks">
+          <NavLink to="/faq" activeClassName="active" className="link">Frequently Asked Questions</NavLink>
+        </div>
         <p>select one of the images below for details</p>
         <GalleryCatalog
           catalog={customProducts}
@@ -42,16 +45,7 @@ function LandingCustom() {
             photos. My intricate designs transform memories into
             stunning visual masterpieces.
           </p>
-          <div className="mainContentLinks">
-            <NavLink to="/faq" activeClassName="active" className="link">Frequently Asked Questions</NavLink>
-            <a
-              className="link"
-              href="mailto:contact@laurenvoigtfineart.com"
-              aria-label="Email contact@laurenvoigtfineart.com"
-            >
-              contact me
-            </a>
-          </div>
+
         </div>
       </div>
     </div>
