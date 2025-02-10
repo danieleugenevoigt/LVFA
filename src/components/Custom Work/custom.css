@@ -82,7 +82,7 @@ div .galleryContainer {
   'GRAD' 0,
   'opsz' 48;
   font-size: 48px;
-  color: ivar(--link-color);
+  color: var(--link-color);
   user-select: none;
 }
 
