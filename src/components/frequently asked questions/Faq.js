@@ -24,7 +24,8 @@ function Faq() {
         <h1 className="faqTitle">Frequently Asked Questions</h1>
         <div className="faqText">
           <p className="faqQuestion">How much does a custom piece cost?</p>
-          - $1200 (plus applicable Colorado sales tax). This includes FedEx shipping.
+          - $1200 (plus applicable Colorado sales tax).
+          This includes FedEx shipping in the contiguous United States.
           <br />
           <br />
           <p className="faqQuestion">What size is the art?</p>

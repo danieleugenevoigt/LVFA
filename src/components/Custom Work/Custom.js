@@ -81,37 +81,38 @@ function Custom() {
           <p>original image</p>
         </div>
         <div>
+          <div className="button-container">
+            <button
+              type="button"
+              className="contact-button"
+              onClick={handleLast}
+              aria-label="Previous Artwork"
+            >
+              <ChevronLeftIcon />
+            </button>
+            <button
+              type="button"
+              className="contact-button"
+              onClick={() => navigate('/landingCustom')}
+              aria-label="Go Back to Custom Gallery"
+            >
+              <UndoIcon />
+            </button>
+            <button
+              type="button"
+              className="contact-button"
+              onClick={handleNext}
+              aria-label="Next Artwork"
+            >
+              <ChevronRightIcon />
+            </button>
+          </div>
           <p>
             Collaborate with me to bring your artistic dreams to life
             through the timeless, delicate beauty of paper art.
           </p>
         </div>
-        <div className="button-container">
-          <button
-            type="button"
-            className="contact-button"
-            onClick={handleLast}
-            aria-label="Previous Artwork"
-          >
-            <ChevronLeftIcon />
-          </button>
-          <button
-            type="button"
-            className="contact-button"
-            onClick={() => navigate('/landingCustom')}
-            aria-label="Go Back to Custom Gallery"
-          >
-            <UndoIcon />
-          </button>
-          <button
-            type="button"
-            className="contact-button"
-            onClick={handleNext}
-            aria-label="Next Artwork"
-          >
-            <ChevronRightIcon />
-          </button>
-        </div>
+
       </div>
     </div>
   );

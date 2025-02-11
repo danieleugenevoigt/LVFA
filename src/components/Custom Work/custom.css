@@ -33,7 +33,7 @@ div .galleryContainer {
     justify-content: space-evenly;
     margin-left: 1rem;
     margin-top: 2rem;
-    width: 40vw;
+    width: auto;
 }
 .customPageContentLayout {
     display: flex;
@@ -145,7 +145,7 @@ div .galleryContainer {
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 1rem;
-        margin-top: 1rem;
+        margin-top: 0rem;
         width: 70vw;
     }
 
