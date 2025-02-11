@@ -1,7 +1,11 @@
+/* eslint-disable import/no-extraneous-dependencies */
 // Custom Page
 import { React, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import UndoIcon from '@mui/icons-material/Undo';
 import './custom.css';
 import customStyles from './customGallery.module.css';
 import ArtworkViewer from '../artwork-Viewer/ArtworkViewer';
@@ -83,20 +87,29 @@ function Custom() {
           </p>
         </div>
         <div className="button-container">
-          <button type="button" className="contact-button" onClick={handleLast}>
-            <span className="material-symbols-outlined">
-              chevron_left
-            </span>
+          <button
+            type="button"
+            className="contact-button"
+            onClick={handleLast}
+            aria-label="Previous Artwork"
+          >
+            <ChevronLeftIcon />
           </button>
-          <button type="button" className="contact-button" onClick={() => navigate('/landingCustom')}>
-            <span className="material-symbols-outlined">
-              undo
-            </span>
+          <button
+            type="button"
+            className="contact-button"
+            onClick={() => navigate('/landingCustom')}
+            aria-label="Go Back to Custom Gallery"
+          >
+            <UndoIcon />
           </button>
-          <button type="button" className="contact-button" onClick={handleNext}>
-            <span className="material-symbols-outlined">
-              chevron_right
-            </span>
+          <button
+            type="button"
+            className="contact-button"
+            onClick={handleNext}
+            aria-label="Next Artwork"
+          >
+            <ChevronRightIcon />
           </button>
         </div>
       </div>
