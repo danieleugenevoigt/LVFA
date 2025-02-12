@@ -66,6 +66,23 @@ a:hover{
   }
 } 
 
+@media (max-width: 1024px) and (orientation: landscape) {
+  .App {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Marcellus SC', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    height: 100vh;
+    width: auto;
+    justify-content: start;
+    text-align: center;
+  } 
+
+}
+
 @media (max-width: 768px) {
   .App {
     background-color: var(--background-color);

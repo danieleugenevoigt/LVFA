@@ -5,9 +5,17 @@
 
 @media (max-width: 1024px) {
     .artworkViewer{
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
         width: 80vw;
     }
 }
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    .artworkViewer {
+     
+      height: auto; /* Maintain aspect ratio */
+      margin-right:  auto; /* Center the viewer */
+    }
+  }
 
 
