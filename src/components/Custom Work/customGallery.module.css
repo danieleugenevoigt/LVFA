@@ -31,6 +31,8 @@
     width: auto;
 }
 
+
+
 @media (max-width: 1750px){
     .thumbnailButton {
         appearance: none;
@@ -49,6 +51,35 @@
         margin-bottom: .5rem;
     
         width: auto;
+    }
+}
+
+@media (max-width: 1366px) and (orientation: landscape) {
+    .galleryContainer {
+        align-content:flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 0rem;
+        width: 100%;
+    }
+
+    .thumbnailButton {
+        appearance: none;
+        border: none;
+        border-radius: .5rem;
+        height: 11rem;
+        margin-bottom: 0rem;
+        margin-left: .5rem;
+        width: 11rem;
+    }
+    
+    .thumbnailButton img {
+        border-radius: .5rem;
+        height: 11rem;
+        margin-bottom: 0rem;
+        width: 11rem;
     }
 }
 

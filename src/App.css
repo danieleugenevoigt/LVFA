@@ -75,7 +75,7 @@ a:hover{
     font-family: 'Marcellus SC', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 300;
-    height: 100vh;
+    height: a;
     width: auto;
     justify-content: start;
     text-align: center;

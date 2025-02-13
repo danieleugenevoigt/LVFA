@@ -35,6 +35,30 @@
     margin-top: 5rem;
   } 
 
+  @media (max-width: 1024px) and (orientation: landscape) {
+    .home {
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+  
+      justify-content: flex-start;
+  
+      height: auto;
+      padding: 0;
+      width: 100vw;
+    }
+  
+    .home p {
+      width: 50vw; /* Adjust paragraph width */
+      font-size: 0.9rem; /* Decrease font size for readability */
+      margin-left: 2rem;
+      margin-bottom: 2rem;
+      margin-top: 5rem;
+      width: 80vw;
+    }
+}
+
   /* Tablet Media Query */
 @media (max-width: 1024px) {
   /* .home {
