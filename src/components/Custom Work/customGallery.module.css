@@ -142,6 +142,26 @@
     }
 }
 
+@media (max-width: 1400px) and (orientation: landscape) {
+    .thumbnailButton {
+        appearance: none;
+        border: none;
+        border-radius: .5rem;
+        height: 14rem;
+        margin-bottom: 0rem;
+        margin-left: .5rem;
+        width: 14rem;
+    }
+    
+    .thumbnailButton img {
+        border-radius: .5rem;
+        height: 14rem;
+        margin-bottom: 0rem;
+        width: 14rem;
+    }
+}
+
+
 @media (max-width: 480px) {
     .galleryContainer {
         align-content:flex-start;

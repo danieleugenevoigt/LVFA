@@ -124,3 +124,19 @@
   }
 }
 
+@media (max-width: 720px) and (orientation: landscape) {
+  .home {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0;
+    width: 100vw;
+  }
+
+  .home p {
+    margin-left: 2rem;
+  }
+}
