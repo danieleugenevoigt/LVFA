@@ -10,7 +10,7 @@ span {
 .container img {
     height: 100%;
     object-fit: contain;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .imageInfo {
@@ -102,6 +102,17 @@ span {
 .title-right {
     font-size: 1rem;
     margin-left: auto;
+}
+
+/* Targeting iPad Pro in landscape mode */
+@media only screen 
+  and (min-device-width: 1706px) 
+  and (max-device-width: 1280px) 
+ {
+  
+  .container img {
+   height: auto;
+  }
 }
 
 /* Targeting iPad Pro in landscape mode */

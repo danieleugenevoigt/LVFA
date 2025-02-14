@@ -139,6 +139,19 @@ div .galleryContainer {
 }
 }
 
+@media (max-width: 1706px) and (orientation: landscape) {
+    .customWorkPageContent {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: top;
+        justify-content: flex-start;
+        width: 100vw;
+    }
+    
+}
+
 @media (max-width: 1400px) and (orientation: landscape) {
     .customPageContentLayout {
         display: flex;
@@ -283,6 +296,52 @@ div .galleryContainer {
         display: flex;
         flex-direction: column;
         height: auto;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 720px) and (orientation: landscape) {
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        margin-right: auto;
+        margin-top: 0rem;
+        width: 70vw;
+    }
+
+    .contact-button svg {
+        font-size: 4rem;  /* Adjust the size */
+    }
+
+    .customPageContentLayout {
+        display: flex;
+        flex-direction: column;
+        /* margin-left: 2rem; */
+        margin-right: auto;
+        padding-left: 0rem;
+        align-items: center;
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    .customWorkPageContent {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    .customGalleryTextLayout {
+        display: flex;
+        flex-direction: row;
+        height: 2.5rem;
+        margin-right: auto;
+        padding-left: .5rem;
+        align-items: flex-start;
+        justify-content: space-around;
         width: 100vw;
     }
 }

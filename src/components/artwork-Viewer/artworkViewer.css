@@ -18,4 +18,12 @@
     }
   }
 
+  @media (max-width: 720px) and (orientation: landscape) {
+    .artworkViewer {
+     
+      height: auto; /* Maintain aspect ratio */
+      margin-right:  0rem; /* Center the viewer */
+    }
+  }
+
 
