@@ -123,6 +123,35 @@
     }
 }
 
+@media (max-width: 1280px) and (orientation: portrait) {
+    .galleryContainer {
+        align-content:flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 0rem;
+        width: 100%;
+    }
+
+    .thumbnailButton {
+        appearance: none;
+        border: none;
+        border-radius: .5rem;
+        height: 10rem;
+        margin-bottom: 0rem;
+        margin-left: .5rem;
+        width: 10rem;
+    }
+    
+    .thumbnailButton img {
+        border-radius: .5rem;
+        height: 10rem;
+        margin-bottom: 0rem;
+        width: 10rem;
+    }
+}
+
 /* Phone Media Query */
 @media (max-width: 1024px) {
     .galleryContainer {
@@ -139,17 +168,17 @@
         appearance: none;
         border: none;
         border-radius: .5rem;
-        height: 12rem;
+        height: 16rem;
         margin-bottom: 0rem;
         margin-left: .5rem;
-        width: 12rem;
+        width: 16rem;
     }
     
     .thumbnailButton img {
         border-radius: .5rem;
-        height: 12rem;
+        height: 16rem;
         margin-bottom: 0rem;
-        width: 12rem;
+        width: 16rem;
     }
 }
 
@@ -208,6 +237,35 @@
         height: 12rem;
         margin-bottom: 0rem;
         width: 12rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .galleryContainer {
+        align-content:flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 0rem;
+        width: 100%;
+    }
+
+    .thumbnailButton {
+        appearance: none;
+        border: none;
+        border-radius: .5rem;
+        height: 10rem;
+        margin-bottom: 0rem;
+        margin-left: .5rem;
+        width: 10rem;
+    }
+    
+    .thumbnailButton img {
+        border-radius: .5rem;
+        height: 10rem;
+        margin-bottom: 0rem;
+        width: 10rem;
     }
 }
 
@@ -305,6 +363,7 @@
   and (-webkit-min-device-pixel-ratio: 2) {
   
     .galleryContainer {
+        justify-content: center;
         margin-top: 2.5rem;
     }
     

@@ -129,6 +129,13 @@ span {
   }
 }
 
+@media (max-width: 1280px) and (orientation: portrait) {
+    .container {
+        height: auto;
+   
+    }
+}
+
 @media (max-width: 1024px) {
     /* .container img {
         height: 30vh;

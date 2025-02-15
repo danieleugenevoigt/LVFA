@@ -78,13 +78,17 @@ div .galleryContainer {
     width: 30vw;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (orientation: portrait) {
+    h1 {
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
 
 p {
     font-size: 1rem;
     margin-bottom: .5rem;
     padding: 0rem;
-    text-align: center;
+    text-align: left;
 }
 
 .button-container {
@@ -166,6 +170,7 @@ div .galleryContainer {
     
     .customPageContentLayout p {
         font-size: 1.5rem;
+        margin-left: 2rem;
         padding-bottom: 0rem;
         padding-top: 4rem;
         text-align: left;
@@ -198,7 +203,7 @@ div .galleryContainer {
         font-size: 1rem;
         margin-bottom: .5rem;
         padding: 0rem;
-        text-align: center;
+        text-align: left;
     }
     
     .button-container {
