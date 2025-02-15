@@ -111,7 +111,6 @@ span {
  {
   .container {
     height: auto;
-    margin-left: 2rem;
   }
   .container img {
    height: auto;
@@ -132,7 +131,6 @@ span {
 @media (max-width: 1280px) and (orientation: portrait) {
     .container {
         height: auto;
-   
     }
 }
 
