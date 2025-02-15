@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import galleryStyles from './gallery.module.css';
 import galleryCatalogStyles from '../gallery-catalog/galleryCatalog.module.css';
 import ArtworkViewer from '../artwork-Viewer/ArtworkViewer';
@@ -31,7 +31,7 @@ function Gallery() {
         <meta name="twitter:image" content="%PUBLIC_URL%/lvfa-home.jpg" />
         <link rel="canonical" href="https://laurenvoigtfineart.com/" />
       </Helmet>
-      <ArtworkViewer product={selectedProduct || products[0]} />
+      <ArtworkViewer product={selectedProduct || products[0].title} />
       <GalleryCatalog
         catalog={products}
         onThumbnailClick={handleThumbnailClick}

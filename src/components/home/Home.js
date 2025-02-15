@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import './home.css';
 import Slideshow from '../slideshow/Slideshow';
 
@@ -21,7 +21,6 @@ function Home() {
     `${baseUrl}${12}.webp`,
     `${baseUrl}${13}.webp`,
     `${baseUrl}${14}.webp`,
-    `${baseUrl}${15}.webp`,
     `${baseUrl}${15}.webp`,
     `${baseUrl}${16}.webp`,
     `${baseUrl}${17}.webp`,

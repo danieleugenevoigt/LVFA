@@ -1,5 +1,6 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { NavLink, useNavigate } from 'react-router-dom';
 import './landingCustom.css';
 import landingGalleryStyles from './landingCustomGallery.module.css';
