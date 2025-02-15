@@ -1,4 +1,4 @@
-import { React } from 'react';
+import { React, useEffect, useState } from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import {
   BrowserRouter as Router,
@@ -20,8 +20,45 @@ import Faq from './components/frequently asked questions/Faq';
 import PageNotFound from './components/page-not-found/PageNotFound';
 
 function App() {
+  const [showOverlay, setShowOverlay] = useState(false);
+
+  useEffect(() => {
+    function checkOrientation() {
+      const isPhone = window.innerWidth < 1024; // Targets phones, not tablets
+      const isLandscape = window.innerWidth > window.innerHeight;
+
+      setShowOverlay(isPhone && isLandscape);
+    }
+
+    window.addEventListener('resize', checkOrientation);
+    checkOrientation(); // Run once on load
+
+    return () => window.removeEventListener('resize', checkOrientation);
+  }, []);
+
   return (
     <div className="App">
+      {showOverlay && (
+      <div style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100vw',
+        height: '100vh',
+        background: 'rgba(0, 0, 0, 0.85)', // Dark overlay
+        color: 'white',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: '1.5rem',
+        textAlign: 'center',
+        padding: '20px',
+        zIndex: 9999,
+      }}
+      >
+        Please rotate your phone to portrait mode.
+      </div>
+      )}
       <Router>
         <Header />
         <Routes>
