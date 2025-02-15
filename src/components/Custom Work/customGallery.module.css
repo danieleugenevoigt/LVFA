@@ -54,7 +54,7 @@
     }
 }
 
-@media (max-width: 1706px) and (orientation: landscape) {
+/* @media (max-width: 1706px) and (orientation: landscape) {
     .thumbnailButton {
         appearance: none;
         border: none;
@@ -73,7 +73,7 @@
         margin-bottom: .5rem;
         width: 20rem;
     }
-}
+} */
 
 @media (max-width: 1400px) and (orientation: landscape) {
     .thumbnailButton {
