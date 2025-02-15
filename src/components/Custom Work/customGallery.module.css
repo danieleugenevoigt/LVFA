@@ -54,6 +54,27 @@
     }
 }
 
+@media (max-width: 1706px) and (orientation: landscape) {
+    .thumbnailButton {
+        appearance: none;
+        border: none;
+        border-radius: .5rem;
+        height: 20vh;
+        margin-bottom: .5rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        margin-top: 2rem;
+        width: 20rem;
+    }
+    
+    .thumbnailButton img {
+        border-radius: .5rem;
+        height: 20vh;
+        margin-bottom: .5rem;
+        width: 20rem;
+    }
+}
+
 @media (max-width: 1400px) and (orientation: landscape) {
     .thumbnailButton {
         appearance: none;

@@ -10,7 +10,7 @@ span {
 .container img {
     height: 100%;
     object-fit: contain;
-    /* width: 100%; */
+    width: 100%;
 }
 
 .imageInfo {
@@ -22,7 +22,7 @@ span {
     margin-right: auto;
     margin-top: .25rem;
     margin-bottom: .25rem;
-    width: 80%;
+    width: 30vw;
 }
 
 
@@ -104,12 +104,15 @@ span {
     margin-left: auto;
 }
 
-/* Targeting iPad Pro in landscape mode */
+/* Targeting Asus Zenbook Pro in landscape mode */
 @media only screen 
-  and (min-device-width: 1706px) 
-  and (max-device-width: 1280px) 
+  and (max-width: 1706px) 
+  and (max-height: 1280px) 
  {
-  
+  .container {
+    height: auto;
+    margin-left: 2rem;
+  }
   .container img {
    height: auto;
   }
