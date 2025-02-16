@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -38,7 +39,7 @@ GalleryCatalog.propTypes = {
     }),
   ).isRequired,
   onThumbnailClick: PropTypes.func.isRequired,
-  styles: PropTypes.string,
+  styles: PropTypes.object,
 };
 
 GalleryCatalog.defaultProps = {

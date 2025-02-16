@@ -24,7 +24,7 @@ function App() {
 
   useEffect(() => {
     function checkOrientation() {
-      const isPhone = window.innerWidth < 1024; // Targets phones, not tablets
+      const isPhone = window.innerWidth < 828; // Targets phones, not tablets
       const isLandscape = window.innerWidth > window.innerHeight;
 
       setShowOverlay(isPhone && isLandscape);

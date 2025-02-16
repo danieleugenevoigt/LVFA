@@ -31,7 +31,7 @@ function LandingCustom() {
           Your photographs - Meticulously Captured In The Timeless Medium Of Paper
         </h2>
         <div className="mainContentLinks">
-          <NavLink to="/faq" activeClassName="active" className="link">Frequently Asked Questions</NavLink>
+          <NavLink to="/faq" className={({ isActive }) => (isActive ? 'active link' : 'link')}>Frequently Asked Questions</NavLink>
         </div>
         <p>select one of the images below for details</p>
         <GalleryCatalog

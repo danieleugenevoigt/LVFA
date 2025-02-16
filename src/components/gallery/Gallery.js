@@ -31,7 +31,7 @@ function Gallery() {
         <meta name="twitter:image" content="%PUBLIC_URL%/lvfa-home.jpg" />
         <link rel="canonical" href="https://laurenvoigtfineart.com/" />
       </Helmet>
-      <ArtworkViewer product={selectedProduct || products[0].title} />
+      <ArtworkViewer product={selectedProduct || products[0]} />
       <GalleryCatalog
         catalog={products}
         onThumbnailClick={handleThumbnailClick}
