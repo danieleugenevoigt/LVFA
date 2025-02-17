@@ -3,7 +3,7 @@
     align-content:flex-center;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: auto;
     justify-content: left;
     padding-left: 2rem;

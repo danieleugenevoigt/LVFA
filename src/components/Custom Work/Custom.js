@@ -16,12 +16,14 @@ import customProducts from '../../database/customProducts';
 import galleryA from '../../database/Nanny/customProductDetail';
 import galleryB from '../../database/AJ/customProductDetail';
 import galleryC from '../../database/Izzy/customProductDetail';
+import galleryD from '../../database/Bella/customProductDetail';
 
 // Map product names to their corresponding gallery data
 const allGalleries = {
   Nanny: galleryA,
   AJ: galleryB,
   Izzy: galleryC,
+  Bella: galleryD,
 };
 
 function Custom() {

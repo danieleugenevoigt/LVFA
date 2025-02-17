@@ -9,7 +9,7 @@
     padding-bottom: 1rem;
     padding-left: 0rem;
     height: auto;
-    width: 40vw;
+    width: vw;
 }
 
 .thumbnailButton {
@@ -362,9 +362,9 @@
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
   
-    .galleryContainer {
+    /* .galleryContainer {
         justify-content: center;
         margin-top: 2.5rem;
-    }
+    } */
     
 }

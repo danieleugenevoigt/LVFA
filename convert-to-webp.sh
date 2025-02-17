@@ -2,8 +2,8 @@
 
 # Directory containing PNG files
 # INPUT_DIR="/Users/danielvoigt/Code/Lauren_Web_Site/LVFA/public/images/Trapped"
-INPUT_DIR="/Users/danielvoigt/LVFA-Assets/Custom_Work/Izzy/Izzy"
-OUTPUT_DIR="/Users/danielvoigt/LVFA-Assets/WebP's/Custom_Work/Izzy/Izzy"
+INPUT_DIR="/Users/danielvoigt/LVFA-Assets/Custom_Work/Bella/detail"
+OUTPUT_DIR="/Users/danielvoigt/LVFA-Assets/WebP's/Custom_Work/Bella/detail"
 
 # Create output directory if it doesn't exist
 mkdir -p $OUTPUT_DIR
