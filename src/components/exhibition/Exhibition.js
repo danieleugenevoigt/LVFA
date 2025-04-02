@@ -43,6 +43,28 @@ function Exhibition() {
         <div className="event">
           {/* <a href="http://www.stoneheartgallery.com/home.html">Currently Pursuing Galleries</a> */}
           <a
+            href="https://www.circleofadvocacy.org/home/events"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Expressions Art Show
+          </a>
+          <p> April 5, 2025</p>
+        </div>
+        <div className="event">
+          {/* <a href="http://www.stoneheartgallery.com/home.html">Currently Pursuing Galleries</a> */}
+          <a
+            href="https://40westarts.org/events#!event/2025/4/4/40-west-members-showcase-opening-reception"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            40 West Gallery
+          </a>
+          <p> April 4 - 27, 2025</p>
+        </div>
+        <div className="event">
+          {/* <a href="http://www.stoneheartgallery.com/home.html">Currently Pursuing Galleries</a> */}
+          <a
             href="http://www.stoneheartgallery.com/home.html"
             target="_blank"
             rel="noopener noreferrer"
