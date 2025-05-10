@@ -3,7 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './artworkViewer.css';
-import ProductView from '../product-view/ProductView';
+import ProductVideoLoop from '../product-video-loop/productVideoLoop';
 
 function ArtworkViewer({ product }) {
   ArtworkViewer.propTypes = {
@@ -11,7 +11,11 @@ function ArtworkViewer({ product }) {
   };
   return (
     <div className="artworkViewer">
-      <ProductView folder={product.title} size={product.size} />
+      <ProductVideoLoop title={product.title} />
+      <div className="imageInfo">
+        <h2 className="title-left">{`" ${product.title} "  `}</h2>
+        <h2 className="title-right">{`  ${product.size} `}</h2>
+      </div>
     </div>
   );
 }

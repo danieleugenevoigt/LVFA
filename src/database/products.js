@@ -1,5 +1,5 @@
 const product1 = {
-  title: 'Contemplation',
+  title: 'Geralt-Video-Loop',
   size: '12" by 12" ',
   imageArray: ['/images/slideshow-1.webp', '/images/slideshow-1.webp'],
   description: 'Mixed Media',
