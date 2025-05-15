@@ -94,7 +94,7 @@
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
   
-    .galleryContainer {
+    /* .galleryContainer {
         margin-top: 2.5rem;
-    }
+    } */
 }
