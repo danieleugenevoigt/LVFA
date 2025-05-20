@@ -24,7 +24,7 @@ function App() {
 
   useEffect(() => {
     function checkOrientation() {
-      const isPhone = window.innerWidth < 828; // Targets phones, not tablets
+      const isPhone = window.innerWidth < 934; // Targets phones, not tablets
       const isLandscape = window.innerWidth > window.innerHeight;
 
       setShowOverlay(isPhone && isLandscape);
@@ -45,7 +45,7 @@ function App() {
         left: 0,
         width: '100vw',
         height: '100vh',
-        background: 'rgba(0, 0, 0, 0.85)', // Dark overlay
+        background: 'rgba(0, 0, 0, 1)', // Dark overlay
         color: 'white',
         display: 'flex',
         justifyContent: 'center',
