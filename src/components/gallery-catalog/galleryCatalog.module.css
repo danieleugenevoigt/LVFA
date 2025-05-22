@@ -27,6 +27,23 @@
     width: 6rem;
 }
 
+/* Targeting Asus Zenbook Pro in portrait mode */
+@media only screen 
+  and (width: 1280px) 
+  and (height: 1706px) 
+  and (orientation: portrait)
+ {
+    .galleryContainer {
+        align-content:flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+        padding-left: 2rem;
+        width: 100%;
+    }
+ }
+
 /* Phone Media Query */
 @media (max-width: 1024px) {
     .galleryContainer {
