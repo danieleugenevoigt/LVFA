@@ -15,6 +15,7 @@ a:hover{
   --background-color: #45494E;
   --link-color: #9f9ff3;
   --complimentary-link-color: #eaba6b;
+  --max-content-width: 1920px;
 }
  
  .App {
@@ -25,6 +26,7 @@ a:hover{
   font-family: 'Marcellus SC', Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 300;
+  max-width: var(--max-content-width);
   min-height: 100vh;
   min-width: 100vw;
   justify-content: center;
