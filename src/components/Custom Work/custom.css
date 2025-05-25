@@ -43,7 +43,7 @@ div .galleryContainer {
     padding-left: 5rem;
     align-items: left;
     justify-content: flex-start;
-    width: 70%;
+    width: 75%;
 }
 
 .customPageContentLayout p {
@@ -66,6 +66,11 @@ div .galleryContainer {
     justify-content: flex-start;
     height: 100vh;
     width: 80%;
+}
+
+.customWorkPageContent .artworkViewer {
+    margin-left: 10vw;
+    margin-bottom: 8rem;
 }
 
 .customGalleryTextLayout {
