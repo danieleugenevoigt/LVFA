@@ -33,7 +33,7 @@ width: 30vw;
 
 }
 
-.colTwo .videoContainer {
+.colTwo .aboutVideoContainer {
 
   margin-left:5vw;
   margin-top: 2.5rem;
@@ -90,7 +90,7 @@ width: 30vw;
     text-align: left;
   }
 
-  .colTwo .videoContainer {
+  .colTwo .aboutVideoContainer {
     margin-left: 0; /* Reset margin for center alignment */
     margin-top: 0;
   }
