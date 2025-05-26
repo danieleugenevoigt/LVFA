@@ -61,7 +61,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .galleryContainer {
         align-content:flex-start;
         display: flex;
