@@ -359,7 +359,7 @@
     
     .videoContainer {
       position: relative;
-      width: 60vw;
+      width: 65vw;
       height: 95vh;
     }
     .videoContainer video {
@@ -561,7 +561,6 @@
             margin-right: auto;
             margin-top: .25rem;
             margin-bottom: .25rem;
-            width: 80vw;
         }
     
         .videoContainer video {

@@ -214,7 +214,7 @@ div .galleryContainer {
     }
 } 
 
-/* @media (max-width: 1024px) and (orientation: landscape) {
+ @media (width: 1280px) and (height: 1706px) {
     p {
         font-size: 1rem;
         margin-bottom: .5rem;
@@ -258,7 +258,7 @@ div .galleryContainer {
     .customPageContentLayout {
         display: flex;
         flex-direction: column;
-        margin-left: 2rem; 
+        margin-left: auto; 
         margin-right: auto;
         padding-left: 0rem;
         align-items: center;
@@ -277,8 +277,8 @@ div .galleryContainer {
     
     .customWorkPageContent {
         display: flex;
-        flex-direction: row;
-        margin-left: 0;
+        flex-direction: column;
+        margin-left: auto;
         margin-right: auto;
         align-items: top;
         justify-content: start;
@@ -301,7 +301,7 @@ div .galleryContainer {
         justify-content: space-around;
         width: 90%;
     }
-}  */
+}  
 
 @media (max-width: 860px) {
     .button-container {
