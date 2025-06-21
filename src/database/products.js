@@ -4,7 +4,7 @@ const product1 = {
   imageArray: ['/images/slideshow-1.webp', '/images/slideshow-1.webp'],
   description: 'Mixed Media',
   status: 'Sold',
-  price: '$475',
+  price: '$975',
 };
 
 const product2 = {
@@ -13,7 +13,7 @@ const product2 = {
   imageArray: ['/images/slideshow-2.webp', '/images/slideshow-2.webp'],
   description: 'Mixed Media',
   status: 'Available',
-  price: '$475',
+  price: '$975',
 };
 
 const product3 = {
@@ -22,7 +22,7 @@ const product3 = {
   imageArray: ['/images/slideshow-3.webp', '/images/slideshow-3.webp'],
   description: 'Mixed Media',
   status: 'Sold',
-  price: '$475',
+  price: '$975',
 };
 
 const product4 = {
@@ -31,7 +31,7 @@ const product4 = {
   imageArray: ['/images/slideshow-4.webp', '/images/slideshow-4.webp'],
   description: 'Mixed Media',
   status: 'Available',
-  price: '$475',
+  price: '$975',
 };
 
 const product5 = {
@@ -40,7 +40,7 @@ const product5 = {
   imageArray: ['/images/slideshow-5.webp', '/images/slideshow-5.webp'],
   description: 'Mixed Media',
   status: 'Sold',
-  price: '$475',
+  price: '$975',
 };
 
 const product6 = {
@@ -49,7 +49,7 @@ const product6 = {
   imageArray: ['/images/slideshow-6.webp', '/images/slideshow-6.webp'],
   description: 'Mixed Media',
   status: 'Available',
-  price: '$475',
+  price: '$975',
 };
 
 const product7 = {
@@ -58,7 +58,7 @@ const product7 = {
   imageArray: ['/images/slideshow-7.webp', '/images/slideshow-7.webp'],
   description: 'Mixed Media',
   status: 'Available',
-  price: '$475',
+  price: '$975',
 };
 
 const product8 = {
@@ -67,7 +67,7 @@ const product8 = {
   imageArray: ['/images/slideshow-8.webp', '/images/slideshow-8.webp'],
   description: 'Mixed Media',
   status: 'Available',
-  price: '$475',
+  price: '$975',
 };
 
 const product9 = {
@@ -76,7 +76,7 @@ const product9 = {
   imageArray: ['/images/slideshow-9.webp', '/images/slideshow-9.webp'],
   description: 'Mixed Media',
   status: 'Available',
-  price: '$475',
+  price: '$975',
 };
 
 const product10 = {
@@ -85,7 +85,7 @@ const product10 = {
   imageArray: ['/images/slideshow-10.webp', '/images/slideshow-10.webp'],
   description: 'Mixed Media',
   status: 'Available',
-  price: '$475',
+  price: '$975',
 };
 
 const product11 = {
@@ -93,8 +93,8 @@ const product11 = {
   size: '12" by 12" ',
   imageArray: ['/images/slideshow-11.webp', '/images/slideshow-11.webp'],
   description: 'Mixed Media',
-  status: 'Available',
-  price: '$525',
+  status: 'Sold',
+  price: '$925',
 };
 
 const product12 = {
@@ -103,7 +103,7 @@ const product12 = {
   imageArray: ['/images/slideshow-12.webp', '/images/slideshow-12.webp'],
   description: 'Mixed Media',
   status: 'Available',
-  price: '$525',
+  price: '$925',
 };
 
 const product13 = {
@@ -112,7 +112,7 @@ const product13 = {
   imageArray: ['/images/slideshow-13.webp', '/images/slideshow-13.webp'],
   description: 'Mixed Media',
   status: 'Available',
-  price: '$525',
+  price: '$925',
 };
 
 const product14 = {
@@ -121,7 +121,7 @@ const product14 = {
   imageArray: ['/images/slideshow-14.webp', '/images/slideshow-14.webp'],
   description: 'Mixed Media',
   status: 'Available',
-  price: '$525',
+  price: '$925',
 };
 
 const product15 = {
@@ -130,7 +130,7 @@ const product15 = {
   imageArray: ['/images/slideshow-15.webp', '/images/slideshow-15.webp'],
   description: 'Mixed Media',
   status: 'Available',
-  price: '$525',
+  price: '$925',
 };
 
 const product16 = {
@@ -139,21 +139,38 @@ const product16 = {
   imageArray: ['/images/slideshow-16.webp', '/images/slideshow-16.webp'],
   description: 'Mixed Media',
   status: 'Available',
-  price: '$525',
+  price: '$925',
 };
-
 const product17 = {
   title: 'Silenced',
   size: '12" by 12" ',
   imageArray: ['/images/slideshow-17.webp', '/images/slideshow-17.webp'],
   description: 'Mixed Media',
   status: 'Available',
-  price: '$525',
+  price: '$925',
+};
+
+const product18 = {
+  title: 'Gerault',
+  size: '12" by 12" ',
+  imageArray: ['/images/slideshow-18.webp', '/images/slideshow-18.webp'],
+  description: 'Mixed Media',
+  status: 'Sold',
+  price: '$925',
+};
+
+const product19 = {
+  title: 'Evergreen Lake House',
+  size: '12" by 12" ',
+  imageArray: ['/images/slideshow-19.webp', '/images/slideshow-19.webp'],
+  description: 'Mixed Media',
+  status: 'Sold',
+  price: '$925',
 };
 
 const productList = [product1, product2, product3, product4,
   product5, product6, product7, product8, product9, product10,
   product11, product12, product13, product14, product15, product16,
-  product17];
+  product17, product18, product19];
 
 export default productList;
